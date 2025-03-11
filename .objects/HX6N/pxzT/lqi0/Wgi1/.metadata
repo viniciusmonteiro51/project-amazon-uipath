@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Amazon.com.br",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Wgi18HUYfU6NGUkPOWJz6Q",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/Wgi18HUYfU6NGUkPOWJz6Q",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/lqi0rQCvGkq8AJp2sCJ0pg",
+  "Created": "2025-03-11T19:24:44.9720628Z",
+  "Updated": "2025-03-11T19:24:44.9720628Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -4,8 +4,10 @@
   "description": "Projeto para treinar com a ferramenta UiPath",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[25.2.1]",
-    "UiPath.UIAutomation.Activities": "[25.2.1-preview]"
+    "UiPath.Excel.Activities": "[2.25.1-preview]",
+    "UiPath.System.Activities": "25.2.2",
+    "UiPath.UIAutomation.Activities": "[25.2.1-preview]",
+    "UiPath.WorkflowEvents.Activities": "[3.7.0]"
   },
   "webServices": [],
   "entitiesStores": [],

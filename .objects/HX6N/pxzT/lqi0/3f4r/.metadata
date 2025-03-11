@@ -1,0 +1,14 @@
+﻿{
+  "Name": "JOGO ENIGMA DO LABIRINT…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "3f4rP2-uU0K1JFumI6CK6A",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/3f4rP2-uU0K1JFumI6CK6A",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/lqi0rQCvGkq8AJp2sCJ0pg",
+  "Created": "2025-03-11T19:01:13.6476452Z",
+  "Updated": "2025-03-11T19:01:13.6476452Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

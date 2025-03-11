@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yUTuYaSX602Ks04laaxqGA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/s" CVScreenId="a215ee87-b966-4ea3-a869-4609212f29a2" CvTextArea="19, 320, 224, 21" CvTextArgument="1-24 de 433 resultados para" CvType="Text" DesignTimeRectangle="20, 318, 223, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='1-24 de 433 resultados para' parentid='search' tag='SPAN' type='' class='' check:innerText='1-24 de 433 resultados para' /&gt;" Guid="e69c6e02-a531-4b95-bcfc-232de3d9760f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.br : jogos' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a215ee87-b966-4ea3-a869-4609212f29a2" CvTextArea="246, 320, 61, 21" CvTextArgument="&quot;jogos&quot;" CvType="Text" DesignTimeRectangle="248, 318, 60, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='&amp;quot;jogos&amp;quot;' parentid='search' tag='SPAN' type='' class='a-color-state a-text-bold' check:innerText='&amp;quot;jogos&amp;quot;' /&gt;" Guid="7dc24fa3-1149-47cd-8e21-ccad93b11aca" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d8965830e5c2050df6d2eb1f6bcbb345.png" xmlns="">0P2k_OvlK00e7LBoo4k7nlg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

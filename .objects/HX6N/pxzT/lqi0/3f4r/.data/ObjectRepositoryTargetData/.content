@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MWbsAoN2AkqkSgOA5IKd8w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/s" DesignTimeRectangle="350, 804, 273, 55" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='JOGO ENIGMA DO LABIRINTO - Grow' tag='SPAN' type='' class='' check:innerText='JOGO ENIGMA DO LABIRINTO - Grow' /&gt;" Guid="201bfad1-6e37-43b9-b2dd-f7ccfb8ed8ea" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.br : jogos' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7f5133b6bfb5bc57ccc05b2faaba4213.png" xmlns="">0nYkv7r-SQE2q7lX95G8ftw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

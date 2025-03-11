@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome JOGO ENIGMA DO LABIRINTO - Grow  Amazo",
+  "Type": "Screen",
+  "Id": "o47MHa1XE0Sg5v6NPO7Q7A",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/o47MHa1XE0Sg5v6NPO7Q7A",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/pxzT06xGqkq-Ad6TAkCjdw",
+  "Created": "2025-03-11T19:53:08.3350931Z",
+  "Updated": "2025-03-11T19:53:08.3350931Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

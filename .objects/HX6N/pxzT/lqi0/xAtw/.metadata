@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Extract Table Data",
+  "Type": "Element",
+  "TaxonomyType": "Table",
+  "Id": "xAtwV_qzQkiKfCMx2LQNLQ",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/xAtwV_qzQkiKfCMx2LQNLQ",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/lqi0rQCvGkq8AJp2sCJ0pg",
+  "Created": "2025-03-11T18:34:51.3652246Z",
+  "Updated": "2025-03-11T18:34:51.3652246Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

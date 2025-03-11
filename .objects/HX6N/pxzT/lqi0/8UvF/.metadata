@@ -1,0 +1,13 @@
+﻿{
+  "Name": "PatrocinadoPatrocinado …",
+  "Type": "Element",
+  "Id": "8UvFy4-zZUqi5LeVlO6gzQ",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/8UvFy4-zZUqi5LeVlO6gzQ",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/lqi0rQCvGkq8AJp2sCJ0pg",
+  "Created": "2025-03-11T18:19:41.2934784Z",
+  "Updated": "2025-03-11T18:19:41.2934784Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

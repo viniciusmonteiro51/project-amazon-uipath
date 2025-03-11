@@ -1,0 +1,125 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "01943705796",
+        "bundleName": "fd01943705796",
+        "entitiesBundle": {
+          "Types": {
+            "FormData": {
+              "name": "FormData",
+              "properties": [
+                {
+                  "name": "PesquisarAmazonComBr",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Quantidade",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ComprarEsteItemComoPresente",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "S77b55rasaekf0yzhj5a0p2fxnibmjkedbtn8xwky",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "E1wauuuge1h3vcmsxj5n3yhrxvgq55f9bqvdi2fcau2rnnqlvv",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Lxtlfvlzw2bu0cce2bzu2fcipl3ltxgqjndgsh",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.UIAutomationNext.Activities.Design.SWEntities.fd01943705796",
+        "hash": "MDE5NDM3MDU3OTY",
+        "assemblyName": "fd01943705796.aNoR9XO9DS1xcGSZ3ntvdR2"
+      }
+    },
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "0142066575",
+        "bundleName": "fd0142066575",
+        "entitiesBundle": {
+          "Types": {
+            "FormData": {
+              "name": "FormData",
+              "properties": [
+                {
+                  "name": "PesquisarAmazonComBr",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Quantidade",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ComprarEsteItemComoPresente",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Rjg69pndbxsk1zsb2bavoghf2blwh5jifk2f",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Qtneamqnccebos1gzjwz53ziw8m8alsk4vmqcxryhh6ycqmty7",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Bqtauzx2fbsi2ke7x9alclv7vzjcjgrlv1ywky1",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.UIAutomationNext.Activities.Design.SWEntities.fd0142066575",
+        "hash": "MDE0MjA2NjU3NQ",
+        "assemblyName": "fd0142066575.ELdEB2sdH6K1hNZuWSIlAM1"
+      }
+    }
+  ]
+}

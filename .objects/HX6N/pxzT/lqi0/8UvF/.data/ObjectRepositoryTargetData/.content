@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JmzL3NDop0aJwbOw3ZlSAg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/s" DesignTimeRectangle="339, 445, 304, 791" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' class='puis-card-container s-card-container s-overflow-hidden aok-relative puis-expand-height puis-include-content-margin puis puis-v3rn136fedou3o2d7qtkyoduse5 s-latency-cf-section puis-card-border' aaname='' check:innerText='Patrocinado &amp;#xA;JOGO ENIGMA DO LABIRINTO - Grow&amp;#xA;4,7 de 5 estrelas&amp;#xA; 8&amp;#xA;Mais de 50 compras no mês passado' /&gt;" Guid="3b7796b4-91b1-401a-bd73-3a490720c0f9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.br : jogos' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d4917cc15710a75cf78bf4a8915cac55.png" xmlns="">0195QlwmQ60yYKaDyb5qT2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

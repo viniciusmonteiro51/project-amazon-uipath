@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FlVNNenEMku-Vq_Xe0NQbg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" DesignTimeRectangle="918, 722, 619, 175" DesignTimeScaleFactor="1.25" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl parentid='feature-bullets' tag='LI' type='' class='a-spacing-mini' aaname='' /&gt;" Guid="9c6387fa-e529-4f69-a929-8e2a1dea953d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="895, 687, 642, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='feature-bullets' tag='H1' type='' class='a-size-base-plus a-text-bold' aaname=' Sobre este item ' check:innerText='Sobre este item' /&gt;" Guid="572425ec-1d72-4b0c-bc11-9aabfff23168" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="71f9f923d7f33e64c81bfc2c13fd27a4.png" xmlns="">0dDuaYkysaUuwBx7m74mjNw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
