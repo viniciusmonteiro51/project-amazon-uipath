@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kx0hGAKI70uZRjkLHyF8eA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Aprendendo-recursos-CrashApult-Challenge-catapulta/dp/B078WMDKL9/ref=sr_1_1_sspa" CVScreenId="ef15e8e9-6a7a-4e3c-8199-613fb68541ac" CvElementArea="152, 65, 1508, 43" CvType="InputBox" DesignTimeRectangle="205, 72, 1407, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Aprendendo recursos CrashApult STEM Challenge, jogo de catapulta*' role='pane' /&gt;&lt;ctrl name='Barra de pesquisa e endereço' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Aprendendo recursos CrashApult STEM Challenge, jogo de catapulta*' role='pane' /&gt;&lt;ctrl name='Barra de pesquisa e endereço' role='editable text' automationid='' /&gt;" Guid="74850638-4299-4aeb-a15a-b564b0cd5040" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Aprendendo recursos CrashApult STEM Challenge, jogo de catapulta*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="89e7c5f74558d706d67571f3a77f8e90.png" xmlns="">02CWUWruBnUef78U4bZgzuA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

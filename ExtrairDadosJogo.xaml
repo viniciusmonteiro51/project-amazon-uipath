@@ -119,32 +119,39 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="ExtrairDadosJogo" sap:VirtualizedContainerService.HintSize="1001,786.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="ExtrairDadosJogo" sap:VirtualizedContainerService.HintSize="933,661.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:String" Name="seletorJanela">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">&lt;html app='chrome.exe' title=' * | Amazon.com.br' /&gt;</Literal>
+        </Variable.Default>
+      </Variable>
+    </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Size x:Key="ShapeSize">50,50</av:Size>
-        <av:Point x:Key="ShapeLocation">535,15</av:Point>
-        <av:PointCollection x:Key="ConnectorLocation">560,65 560,125</av:PointCollection>
+        <av:Point x:Key="ShapeLocation">655,15</av:Point>
+        <av:PointCollection x:Key="ConnectorLocation">680,65 680,125</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
       <x:Reference>__ReferenceID0</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+    <FlowStep sap2010:WorkflowViewState.IdRef="FlowStep_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">505,125</av:Point>
           <av:Size x:Key="ShapeSize">110,70</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome JOGO ENIGMA DO LABIRINTO - Grow  Amazo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,2166" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome JOGO ENIGMA DO LABIRINTO - Grow  Amazo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,1949" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,1955" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="dataTableGames" />
                 <Variable x:TypeArguments="x:String" Name="nome_jogo" />
@@ -157,7 +164,6 @@
                 <Variable x:TypeArguments="x:String" Name="genero" />
                 <Variable x:TypeArguments="x:String" Name="numero_jogadores" />
                 <Variable x:TypeArguments="x:String" Name="descricao" />
-                <Variable x:TypeArguments="x:String" Name="variable1" />
                 <Variable x:TypeArguments="x:String" Name="url" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
@@ -165,35 +171,29 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NGetText DisplayName="GET nome_jogo" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_47" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outNomeJogo]" Version="V4">
+              <uix:NGetText DisplayName="GET nome_jogo" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_58" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outNomeJogo]" Version="V4">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="soD-yKlIzkamvSPfemsEew" DesignTimeRectangle="895, 441, 510, 37" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productTitle' tag='SPAN' type='' class='a-size-large product-title-word-break' /&gt;" Guid="ea743952-d38a-45a2-bd98-6f1ac234a0df" InformativeScreenshot="b9121e943e591d6b004d9b61c2fdd66f.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/FOoTj_SYGUiAT2Zf3R5tWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target DesignTimeRectangle="1410, 257, 500, 49" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl parentid='navSwmHoliday' tag='IMG' type='' class='' aaname='X-Site' /&gt;" Guid="9bd9100b-d992-4c69-9404-24cb04415629" SearchSteps="FuzzySelector" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="Z-Y1FbzZkki6K8MDRxeAqA" DesignTimeRectangle="592, 357, 252, 77" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productTitle' tag='SPAN' type='' class='a-size-large product-title-word-break' /&gt;" Guid="75ef9b9b-7673-4d8b-9168-5ba7704a33fc" InformativeScreenshot="dbc7912cf45d7db86e01576ed5420c2d.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/UzSHS_UTdk6g5ioTIg0skA" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="GET preco" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_48" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outPreco]" Version="V4">
+              <uix:NGetText DisplayName="GET preco" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_48" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outPreco]" Version="V4">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="LV_843FJ9UOySbUkbxj9gA" DesignTimeRectangle="979, 618, 79, 44" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='corePriceDisplay_desktop_feature_div' tag='SPAN' aaname='' /&gt;" Guid="1d571f13-776b-41e2-a986-f84f518549de" InformativeScreenshot="7fccfc9cd8f49448ccb93580c185ffd2.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/pW5sJGUEPE-HKXnoKaCEVw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="azjFZPs_E0eEN51Eyi2NzA" DesignTimeRectangle="979, 618, 79, 44" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='corePriceDisplay_desktop_feature_div' tag='SPAN' aaname='' /&gt;" Guid="1d571f13-776b-41e2-a986-f84f518549de" InformativeScreenshot="7fccfc9cd8f49448ccb93580c185ffd2.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/pW5sJGUEPE-HKXnoKaCEVw" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="GET enviado_por" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_49" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outEnviadoPor]" Version="V4">
+              <uix:NGetText DisplayName="GET enviado_por" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_49" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outEnviadoPor]" Version="V4">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="kKCV89oebkSzOLUrSjeKVg" DesignTimeRectangle="1695, 973, 106, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='fulfillerInfoFeature_feature_div' tag='SPAN' type='' class='a-size-small offer-display-feature-text-message' /&gt;" Guid="2e5163d4-dfae-49a3-9bf2-c9c7f85c2415" InformativeScreenshot="e26292c41318edbf6a724ed466a6ac75.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/Wgi18HUYfU6NGUkPOWJz6Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="m7gL4OYuJk-i1c1Lv0-kcw" DesignTimeRectangle="1695, 973, 106, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='fulfillerInfoFeature_feature_div' tag='SPAN' type='' class='a-size-small offer-display-feature-text-message' /&gt;" Guid="2e5163d4-dfae-49a3-9bf2-c9c7f85c2415" InformativeScreenshot="e26292c41318edbf6a724ed466a6ac75.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/Wgi18HUYfU6NGUkPOWJz6Q" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="GET vendido_por" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_50" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outVendidoPor]" Version="V4">
+              <uix:NGetText DisplayName="GET vendido_por" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_50" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outVendidoPor]" Version="V4">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="yZAnVOHhI0-0BA8Dcao0aw" DesignTimeRectangle="1695, 749, 106, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='merchantInfoFeature_feature_div' tag='SPAN' type='' class='a-size-small offer-display-feature-text-message' /&gt;" Guid="91a003c5-4b78-44cf-86e7-3871cb685f79" InformativeScreenshot="a8a0cf9f8dfbc32c76860d81eb8bcf6f.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/f-kPJCZsxUCGu9P_M-brEQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="PAHENZ0qfUe-40MX_YMLeA" DesignTimeRectangle="1695, 749, 106, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='merchantInfoFeature_feature_div' tag='SPAN' type='' class='a-size-small offer-display-feature-text-message' /&gt;" Guid="91a003c5-4b78-44cf-86e7-3871cb685f79" InformativeScreenshot="a8a0cf9f8dfbc32c76860d81eb8bcf6f.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/f-kPJCZsxUCGu9P_M-brEQ" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="GET marca" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_51" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outMarca]" Version="V4">
+              <uix:NGetText DisplayName="GET marca" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_51" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outMarca]" Version="V4">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="KD3XV4gHOkiri93dyW69Eg" DesignTimeRectangle="1067, 479, 42, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="2ecf7ab3-540f-4972-910c-0a40d2f76540" InformativeScreenshot="00a3ea83862d74cb38acee3b5e6a0a89.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/K1FJtFlA5U6siI5hrBy5eQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="-rcuLmrUJUyFObf32QKBOw" DesignTimeRectangle="1067, 479, 42, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="2ecf7ab3-540f-4972-910c-0a40d2f76540" InformativeScreenshot="00a3ea83862d74cb38acee3b5e6a0a89.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/K1FJtFlA5U6siI5hrBy5eQ" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="895, 479, 50, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base a-text-bold' aaname='Marca' check:innerText='Marca' /&gt;" Guid="4166c104-b379-440c-bdb2-2ed41792a753" SearchSteps="FuzzySelector" />
@@ -202,9 +202,9 @@
                   </uix:TargetAnchorable>
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="GET material" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_56" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outMaterial]" Version="V4">
+              <uix:NGetText DisplayName="GET material" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_56" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outMaterial]" Version="V4">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="XRif9SoheUqF3SSIOTiH7Q" DesignTimeRectangle="1067, 512, 44, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="0871a424-e6e9-465d-ac6a-e7e8576d51fb" InformativeScreenshot="5a72fa3b255e1ebc4b50ef10a5e36d65.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/KqSH3qyDqE6CweZPUULbGw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="vAdspsrW3kmtno10E8Mynw" DesignTimeRectangle="1067, 512, 44, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="0871a424-e6e9-465d-ac6a-e7e8576d51fb" InformativeScreenshot="5a72fa3b255e1ebc4b50ef10a5e36d65.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/KqSH3qyDqE6CweZPUULbGw" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="895, 512, 69, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base a-text-bold' aaname='Material' check:innerText='Material' /&gt;" Guid="218ae3dd-e05f-4cde-827e-0f6f261969ac" SearchSteps="FuzzySelector" />
@@ -215,7 +215,7 @@
               </uix:NGetText>
               <uix:NGetText DisplayName="GET tema" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_55" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outTema]" Version="V4">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="-L3c5BdH40u3ht4-dTdHDA" DesignTimeRectangle="1067, 544, 72, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="252d8dd9-0d27-4e49-b6e3-c14917897f9a" InformativeScreenshot="42762b852417ca5e1eb4dfa806d4bf55.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/3iRdfrXLqES-dXpHPjTpUQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="qliTGNqjm0yuOdLuCQaanA" DesignTimeRectangle="1067, 544, 72, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="252d8dd9-0d27-4e49-b6e3-c14917897f9a" InformativeScreenshot="42762b852417ca5e1eb4dfa806d4bf55.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/3iRdfrXLqES-dXpHPjTpUQ" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="895, 544, 45, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base a-text-bold' aaname='Tema' check:innerText='Tema' /&gt;" Guid="f193c368-f705-422d-88b1-a0930ee357f4" SearchSteps="FuzzySelector" />
@@ -226,7 +226,7 @@
               </uix:NGetText>
               <uix:NGetText DisplayName="GET genero" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_54" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outGenero]" Version="V4">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="CLsTb6TqEkeGqg8Q9adwPA" DesignTimeRectangle="1067, 577, 80, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="c729ab1a-5880-4c6c-a28c-93523e28c46f" InformativeScreenshot="3563dae4a98218d05347fc6989649b4a.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/eBc9sHGvxES0fkY-DcrhtQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="SN_vwOClEkCq03GvYN_Xag" DesignTimeRectangle="1067, 577, 80, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="c729ab1a-5880-4c6c-a28c-93523e28c46f" InformativeScreenshot="3563dae4a98218d05347fc6989649b4a.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/eBc9sHGvxES0fkY-DcrhtQ" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="895, 577, 60, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base a-text-bold' aaname='Gênero' check:innerText='Gênero' /&gt;" Guid="498ab2b2-dc3f-4d74-af1a-5c02cd63deef" SearchSteps="FuzzySelector" />
@@ -237,7 +237,7 @@
               </uix:NGetText>
               <uix:NGetText DisplayName="GET numero_jogadores" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_52" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outNumeroJogadores]" Version="V4">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="2f6oR0hn8ESQNJXr7ITr7Q" DesignTimeRectangle="1067, 609, 27, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="0887c306-1952-4cbf-8728-73e069572645" InformativeScreenshot="ce7fde9e775d207a0394c09b5463287c.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/iV8gXxId-k-bxZU0E47zEw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="V54AgcMBJEuY3qmMS9d5xg" DesignTimeRectangle="1067, 609, 27, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="0887c306-1952-4cbf-8728-73e069572645" InformativeScreenshot="ce7fde9e775d207a0394c09b5463287c.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/iV8gXxId-k-bxZU0E47zEw" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="895, 609, 92, 47" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base a-text-bold' aaname='Número de jogadores' check:innerText='Número de jogadores' /&gt;" Guid="75429500-790c-46aa-afa4-c5111f5fda9e" SearchSteps="FuzzySelector" />
@@ -248,7 +248,7 @@
               </uix:NGetText>
               <uix:NGetText DisplayName="GET descricao" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,183" sap2010:WorkflowViewState.IdRef="NGetText_53" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outDescricao]" Version="V4">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="FlVNNenEMku-Vq_Xe0NQbg" DesignTimeRectangle="918, 722, 619, 175" DesignTimeScaleFactor="1.25" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl parentid='feature-bullets' tag='LI' type='' class='a-spacing-mini' aaname='' /&gt;" Guid="9c6387fa-e529-4f69-a929-8e2a1dea953d" InformativeScreenshot="71f9f923d7f33e64c81bfc2c13fd27a4.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/QI0e2oROZ0S6N3YlGkqi7w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="LwEZZwTTi0Kh_DF7AYRTsg" DesignTimeRectangle="918, 722, 619, 175" DesignTimeScaleFactor="1.25" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl parentid='feature-bullets' tag='LI' type='' class='a-spacing-mini' aaname='' /&gt;" Guid="9c6387fa-e529-4f69-a929-8e2a1dea953d" InformativeScreenshot="71f9f923d7f33e64c81bfc2c13fd27a4.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/QI0e2oROZ0S6N3YlGkqi7w" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="895, 687, 642, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='feature-bullets' tag='H1' type='' class='a-size-base-plus a-text-bold' aaname=' Sobre este item ' check:innerText='Sobre este item' /&gt;" Guid="572425ec-1d72-4b0c-bc11-9aabfff23168" SearchSteps="FuzzySelector" />
@@ -261,7 +261,151 @@
           </ActivityAction>
         </uix:NApplicationCard.Body>
         <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="-1929, -9, 1938, 1048" BrowserType="Chrome" ContentHash="4fAcs4ci_UGnkcPF0T_XcQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="8cf82473ac2be66b3441d4eebd782359.jpg" Reference="K5GWDZS8T0m1oHYHFx_EfQ/o47MHa1XE0Sg5v6NPO7Q7A" Selector="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" Url="[url]" Version="V2" />
+          <uix:TargetApp Area="-1929, -9, 1938, 1048" BrowserType="Chrome" ContentHash="ccAausvhvUmazKpQVgUmKQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="8cf82473ac2be66b3441d4eebd782359.jpg" Reference="K5GWDZS8T0m1oHYHFx_EfQ/o47MHa1XE0Sg5v6NPO7Q7A" Selector="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" Url="[url]" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </FlowStep>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">625,125</av:Point>
+          <av:Size x:Key="ShapeSize">110,70</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome JOGO ENIGMA DO LABIRINTO - Grow  Amazo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,2260" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="484,2042" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Name="dataTableGames" />
+                <Variable x:TypeArguments="x:String" Name="nome_jogo" />
+                <Variable x:TypeArguments="x:String" Name="preco" />
+                <Variable x:TypeArguments="x:String" Name="enviado_por" />
+                <Variable x:TypeArguments="x:String" Name="vendido_por" />
+                <Variable x:TypeArguments="x:String" Name="marca" />
+                <Variable x:TypeArguments="x:String" Name="material" />
+                <Variable x:TypeArguments="x:String" Name="tema" />
+                <Variable x:TypeArguments="x:String" Name="genero" />
+                <Variable x:TypeArguments="x:String" Name="numero_jogadores" />
+                <Variable x:TypeArguments="x:String" Name="descricao" />
+                <Variable x:TypeArguments="x:String" Name="url" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,1980" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="sd:DataTable" Name="dataTableGames" />
+                  <Variable x:TypeArguments="x:String" Name="nome_jogo" />
+                  <Variable x:TypeArguments="x:String" Name="preco" />
+                  <Variable x:TypeArguments="x:String" Name="enviado_por" />
+                  <Variable x:TypeArguments="x:String" Name="vendido_por" />
+                  <Variable x:TypeArguments="x:String" Name="marca" />
+                  <Variable x:TypeArguments="x:String" Name="material" />
+                  <Variable x:TypeArguments="x:String" Name="tema" />
+                  <Variable x:TypeArguments="x:String" Name="genero" />
+                  <Variable x:TypeArguments="x:String" Name="numero_jogadores" />
+                  <Variable x:TypeArguments="x:String" Name="descricao" />
+                  <Variable x:TypeArguments="x:String" Name="url" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NGetText DisplayName="Get nome_jogo" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_70" TextString="[outNomeJogo]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl id='productTitle' tag='SPAN' /&gt;" Guid="66b1f012-69a0-4b9b-8157-7911a4b9a718" SearchSteps="Selector" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NGetText DisplayName="Get preco" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_82" TextString="[outPreco]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='corePriceDisplay_desktop_feature_div' tag='SPAN' /&gt;" Guid="a2e136f3-f086-40a4-8f79-dfbcf5957ab9" SearchSteps="Selector" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NGetText DisplayName="Get enviado_por" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_83" TextString="[outEnviadoPor]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='fulfillerInfoFeature_feature_div' tag='SPAN' class='a-size-small offer-display-feature-text-message' /&gt;" Guid="ffe4cb71-d136-4858-b8e8-c97b328838c0" SearchSteps="Selector" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NGetText DisplayName="Get vendido_por" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_84" TextString="[outVendidoPor]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='merchantInfoFeature_feature_div' tag='SPAN' class='a-size-small offer-display-feature-text-message' /&gt;" Guid="9b61e6dd-2aa5-4da5-b086-9bc5a12a0c9a" SearchSteps="Selector" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NGetText DisplayName="Get marca" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_85" TextString="[outMarca]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="22846555-3540-48ac-af40-32f4f01cd478" SearchSteps="Selector" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NGetText DisplayName="Get material" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_86" TextString="[outMaterial]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="4c503184-8f6b-4534-b482-5e83c5e5bcb5" SearchSteps="Selector" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NGetText DisplayName="Get tema" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_87" TextString="[outTema]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="6f301f8a-9057-4975-8ee0-e60c175b938c" SearchSteps="Selector" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NGetText DisplayName="Get genero" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_88" TextString="[outGenero]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="02ab3cdb-695a-45cb-bc42-5c0d2ef7228b" SearchSteps="Selector" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NGetText DisplayName="Get numero_jogadores" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_89" TextString="[outNumeroJogadores]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' idx='1' /&gt;" Guid="727edaae-bbbc-4808-836d-17e2590e45d5" SearchSteps="Selector" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NGetText DisplayName="Get descricao" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,183" sap2010:WorkflowViewState.IdRef="NGetText_90" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='feature-bullets' tag='LI' class='a-spacing-mini' /&gt;" Guid="e779ea3b-8102-4936-b7da-a7a62117e149" SearchSteps="Selector" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-1929, -9, 1938, 1048" BrowserType="Chrome" ContentHash="ccAausvhvUmazKpQVgUmKQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="8cf82473ac2be66b3441d4eebd782359.jpg" Reference="K5GWDZS8T0m1oHYHFx_EfQ/o47MHa1XE0Sg5v6NPO7Q7A" Selector="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" Url="[url]" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </FlowStep>
+    <FlowStep sap2010:WorkflowViewState.IdRef="FlowStep_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">365,125</av:Point>
+          <av:Size x:Key="ShapeSize">110,70</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" IsDisplayNameAuto="True" ScopeGuid="13463360-2a74-4d1d-8f05-feb89e1942bb" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" Version="V2" />
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
     </FlowStep>

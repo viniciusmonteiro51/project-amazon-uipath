@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="CLsTb6TqEkeGqg8Q9adwPA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="SN_vwOClEkCq03GvYN_Xag" Reference="K5GWDZS8T0m1oHYHFx_EfQ/eBc9sHGvxES0fkY-DcrhtQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" DesignTimeRectangle="1067, 577, 80, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="c729ab1a-5880-4c6c-a28c-93523e28c46f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" DesignTimeRectangle="1067, 577, 80, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="c729ab1a-5880-4c6c-a28c-93523e28c46f" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
       <TargetAnchorable.Anchors>
-        <scg:List x:TypeArguments="ITarget" Capacity="4">
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
           <Target DesignTimeRectangle="895, 577, 60, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base a-text-bold' aaname='Gênero' check:innerText='Gênero' /&gt;" Guid="498ab2b2-dc3f-4d74-af1a-5c02cd63deef" SearchSteps="FuzzySelector" />
         </scg:List>
       </TargetAnchorable.Anchors>
-      <imageRef attrName="InformativeScreenshot" originalValue="3563dae4a98218d05347fc6989649b4a.png" xmlns="">02X_yuEmIq0qhjQbjsGUUiQ</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="3563dae4a98218d05347fc6989649b4a.png" xmlns="">08Zwp3rXOvUKQpNbh4R6iGw</imageRef>
     </TargetAnchorable>
-    <x:String x:Key="ActivityType">None</x:String>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="&lt;html app='chrome.exe' title=' * | Amazon.com.br' /&gt;" IsVariable="False" Name="seletorJanela" />
+    </scg:List>
+    <x:String x:Key="ActivityType">GetText</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "amazon.com.brAprendend…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "Sy_UKGNiIk2R5RD0ip-1YQ",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/Sy_UKGNiIk2R5RD0ip-1YQ",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/lqi0rQCvGkq8AJp2sCJ0pg",
+  "Created": "2025-03-12T18:57:26.3504014Z",
+  "Updated": "2025-03-12T18:57:26.3504014Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
