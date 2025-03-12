@@ -1,0 +1,70 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "url&Sequence_1",
+        "descricao&Sequence_3",
+        "numero_jogadores&Sequence_3",
+        "genero&Sequence_3",
+        "tema&Sequence_3",
+        "material&Sequence_3",
+        "marca&Sequence_3",
+        "vendido_por&Sequence_3",
+        "enviado_por&Sequence_3",
+        "preco&Sequence_3",
+        "nome_jogo&Sequence_3",
+        "dataTableGames&Sequence_3",
+        "destinationFile&Sequence_1",
+        "dataTableAmazon&Sequence_1",
+        "searchItem&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExtrairDadosJogo.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dataTableGames&Sequence_4",
+        "nome_jogo&Sequence_4",
+        "preco&Sequence_4",
+        "enviado_por&Sequence_4",
+        "vendido_por&Sequence_4",
+        "marca&Sequence_4",
+        "material&Sequence_4",
+        "tema&Sequence_4",
+        "genero&Sequence_4",
+        "numero_jogadores&Sequence_4",
+        "descricao&Sequence_4",
+        "variable1&Sequence_4",
+        "url&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "outURL",
+        "outDescricao",
+        "outNumeroJogadores",
+        "outGenero",
+        "outTema",
+        "outMaterial",
+        "outMarca",
+        "outVendidoPor",
+        "outEnviadoPor",
+        "outPreco",
+        "outNomeJogo"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -263,15 +263,11 @@
       <AssemblyReference>fd0142066575.ELdEB2sdH6K1hNZuWSIlAM1</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1215,2666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="984,2184" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dataTableAmazon" />
       <Variable x:TypeArguments="x:String" Default="Jogos" Name="searchItem" />
-      <Variable x:TypeArguments="x:String" Name="destinationFile">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">C:\Users\VINICIUSDANIEL\Desktop\destination.csv</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="C:\Users\VINICIUSDANIEL\Desktop\destination.csv" Name="destinationFile" />
       <Variable x:TypeArguments="x:String" Name="url" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -279,19 +275,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="536,2643" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="616,2161" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="502,2560" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313">
+      <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="582,2078" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468.00000000000006,1610" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="548,1838" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="dataTableGames" />
                 <Variable x:TypeArguments="x:String" Name="nome_jogo" />
@@ -310,41 +306,76 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Pesquisar &quot;Jogos&quot;" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,251" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" Text="[searchItem + &quot;[k(Enter)]&quot;]" Version="V4">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Pesquisar &quot;Jogos&quot;" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="514,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" Text="[searchItem + &quot;[k(Enter)]&quot;]" Version="V4">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="amazon.com.br/s" CVScreenId="3dda4160-8306-42f7-910e-4d870d1b48ba" ContentHash="9DlHY5QU-UGPvVnJjtx15Q" CvElementArea="680, 129, 737, 52" CvType="InputBox" DesignTimeRectangle="685, 196, 727, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' type='text' class='nav-input nav-progressive-attribute' placeholder='Pesquisar Amazon.com.br' aaname='Pesquisar Amazon.com.br' /&gt;" Guid="c5eabdc2-58f7-41f2-afc9-44fae6c56dc0" InformativeScreenshot="60e977376f77e8d6daeab853bea345ce.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/A8YT83dwfkyJPbbDUqmDOQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.br : jogos' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
                 </uix:NTypeInto.Target>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'JOGO ENIGMA DO LABIRINT…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,227" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" Version="V4">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/s" ContentHash="MWbsAoN2AkqkSgOA5IKd8w" DesignTimeRectangle="350, 804, 273, 55" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='JOGO ENIGMA DO LABIRINTO - Grow' tag='SPAN' type='' class='' check:innerText='JOGO ENIGMA DO LABIRINTO - Grow' /&gt;" Guid="201bfad1-6e37-43b9-b2dd-f7ccfb8ed8ea" InformativeScreenshot="7f5133b6bfb5bc57ccc05b2faaba4213.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/3f4rP2-uU0K1JFumI6CK6A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.br : jogos' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
-                </uix:NClick.Target>
-                <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NClick.VerifyOptions>
-              </uix:NClick>
-              <uix:NGetText DisplayName="Get Text 'amazon.com.brJOGO-ENIG…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" TextString="[url]" Version="V4">
-                <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="GKMRfFFtSEah-dynzOda7w" DesignTimeRectangle="205, 72, 1407, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br - Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de pesquisa e endereço' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br - Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de pesquisa e endereço' role='editable text' automationid='' /&gt;" Guid="f347e778-0f25-4afa-8db4-a6cd3b6da2fd" InformativeScreenshot="609453ebf1ef083fa6177dd62c3d0239.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/8Hrwqrj-3k2xbh2n8OYeGg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
-                </uix:NGetText.Target>
-              </uix:NGetText>
-              <ui:BuildDataTable DataTable="[dataTableGames]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;nome_jogo&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;preco&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;enviado_por&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;vendido_por&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;marca&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;material&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;tema&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;genero&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;numero_jogadores&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;descricao&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,123" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[url]" />
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ExtrairDadosJogo - Invoke Workflow File (ExtrairDadosJogo.xaml)" sap:VirtualizedContainerService.HintSize="434,267" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ExtrairDadosJogo.xaml">
-                <ui:InvokeWorkflowFile.Arguments>
-                  <InArgument x:TypeArguments="x:String" x:Key="outURL">[url]</InArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="outNomeJogo">[nome_jogo]</OutArgument>
-                </ui:InvokeWorkflowFile.Arguments>
-              </ui:InvokeWorkflowFile>
-              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{nome_jogo, preco, enviado_por, vendido_por, marca, material, tema, genero, numero_jogadores, descricao }]" DataTable="[dataTableGames]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,221" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-              <ui:WriteCsvFile AddHeaders="True" DataTable="[dataTableGames]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[destinationFile]" sap:VirtualizedContainerService.HintSize="434,179" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+              <ui:BuildDataTable DataTable="[dataTableGames]" DisplayName="Criando tabela de dados" sap:VirtualizedContainerService.HintSize="514,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;nome_jogo&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;preco&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;enviado_por&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;vendido_por&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;marca&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;material&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;tema&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;genero&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;numero_jogadores&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;descricao&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+              <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="514,1255" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" Version="V4">
+                <uix:NForEachUiElement.Body>
+                  <ActivityAction x:TypeArguments="x:Int32">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,958" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,205" sap2010:WorkflowViewState.IdRef="NClick_5" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" Version="V4">
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NGetText DisplayName="Extração de URL" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" TextString="[url]" Version="V4">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="GKMRfFFtSEah-dynzOda7w" DesignTimeRectangle="205, 72, 1407, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br - Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de pesquisa e endereço' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br - Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de pesquisa e endereço' role='editable text' automationid='' /&gt;" Guid="f347e778-0f25-4afa-8db4-a6cd3b6da2fd" InformativeScreenshot="609453ebf1ef083fa6177dd62c3d0239.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/8Hrwqrj-3k2xbh2n8OYeGg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='JOGO ENIGMA DO LABIRINTO - Grow | Amazon.com.br - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ExtrairDadosJogo - Invoke Workflow File (ExtrairDadosJogo.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ExtrairDadosJogo.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outNomeJogo">[nome_jogo]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outPreco">[preco]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outEnviadoPor">[enviado_por]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outVendidoPor">[vendido_por]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outMarca">[marca]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outMaterial">[material]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outTema">[tema]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outGenero">[genero]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outNumeroJogadores">[numero_jogadores]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outDescricao">[descricao]</OutArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="url" />
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{nome_jogo, preco, enviado_por, vendido_por, marca, material, tema, genero, numero_jogadores, descricao }]" DataTable="[dataTableGames]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                      <uix:NNavigateBrowser DisplayName="Navigate Browser - Voltar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,107" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V4" />
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NForEachUiElement.Body>
+                <uix:NForEachUiElement.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.amazon.com.br/s?k=jogos&amp;__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=7VIKNBT4NKEE&amp;sprefix=jo%2Caps%2C288&amp;ref=nb_sb_noss_2" ContentHash="xsbJlWmwJUOKtSh-EVUUww" DesignTimeRectangle="364, -1117, 1378, 13592" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div' parentid='search' tag='DIV' /&gt;" Guid="d3de6c16-e459-45eb-b45c-547acf36b4c0" InformativeScreenshot="abe5b7b0fcee8e702e7cc0c4c8420cf0.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/skFhUPdEn0qdPQVKoK0Hqw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.br : jogos' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                </uix:NForEachUiElement.Target>
+                <uix:NForEachUiElement.Variables>
+                  <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                  <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+                </uix:NForEachUiElement.Variables>
+                <uix:NForEachUiElement.VariablesMetadata>
+                  <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                    <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                    <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                  </scg:List>
+                </uix:NForEachUiElement.VariablesMetadata>
+              </uix:NForEachUiElement>
+              <ui:WriteCsvFile AddHeaders="True" DataTable="[dataTableGames]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[destinationFile]" sap:VirtualizedContainerService.HintSize="514,179" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
