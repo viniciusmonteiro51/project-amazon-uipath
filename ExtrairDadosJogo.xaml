@@ -403,13 +403,13 @@
           <av:Size x:Key="ShapeSize">110,70</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome JOGO ENIGMA DO LABIRINTO - Grow  Amazo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="538,6923" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome JOGO ENIGMA DO LABIRINTO - Grow  Amazo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1040,5897" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="504,6706" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1006,5680" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="dataTableGames" />
                 <Variable x:TypeArguments="x:String" Name="nome_jogo" />
@@ -429,7 +429,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,693" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,693" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_11">
                     <sap:WorkflowViewStateService.ViewState>
@@ -445,10 +445,10 @@
                   </Sequence>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
-                    <ActivityAction x:TypeArguments="s:Exception">
+                  <Catch x:TypeArguments="s:InvalidOperationException" sap2010:WorkflowViewState.IdRef="Catch`1_11">
+                    <ActivityAction x:TypeArguments="s:InvalidOperationException">
                       <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        <DelegateInArgument x:TypeArguments="s:InvalidOperationException" Name="exception" />
                       </ActivityAction.Argument>
                       <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,196" sap2010:WorkflowViewState.IdRef="Sequence_12">
                         <sap:WorkflowViewStateService.ViewState>
@@ -481,7 +481,7 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,662" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <sap:WorkflowViewStateService.ViewState>
@@ -497,10 +497,10 @@
                   </Sequence>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
-                    <ActivityAction x:TypeArguments="s:Exception">
+                  <Catch x:TypeArguments="s:InvalidOperationException" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                    <ActivityAction x:TypeArguments="s:InvalidOperationException">
                       <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        <DelegateInArgument x:TypeArguments="s:InvalidOperationException" Name="exception" />
                       </ActivityAction.Argument>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_15">
                         <sap:WorkflowViewStateService.ViewState>
@@ -532,7 +532,7 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,662" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_17">
                     <sap:WorkflowViewStateService.ViewState>
@@ -548,10 +548,10 @@
                   </Sequence>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_3">
-                    <ActivityAction x:TypeArguments="s:Exception">
+                  <Catch x:TypeArguments="s:InvalidOperationException" sap2010:WorkflowViewState.IdRef="Catch`1_13">
+                    <ActivityAction x:TypeArguments="s:InvalidOperationException">
                       <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        <DelegateInArgument x:TypeArguments="s:InvalidOperationException" Name="exception" />
                       </ActivityAction.Argument>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_18">
                         <sap:WorkflowViewStateService.ViewState>
@@ -583,7 +583,7 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,662" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_20">
                     <sap:WorkflowViewStateService.ViewState>
@@ -599,10 +599,10 @@
                   </Sequence>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_4">
-                    <ActivityAction x:TypeArguments="s:Exception">
+                  <Catch x:TypeArguments="s:InvalidOperationException" sap2010:WorkflowViewState.IdRef="Catch`1_14">
+                    <ActivityAction x:TypeArguments="s:InvalidOperationException">
                       <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        <DelegateInArgument x:TypeArguments="s:InvalidOperationException" Name="exception" />
                       </ActivityAction.Argument>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_21">
                         <sap:WorkflowViewStateService.ViewState>
@@ -634,312 +634,234 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_5">
-                <TryCatch.Try>
-                  <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_23">
+              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,493" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="2" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_41">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get marca" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_95" TextString="[outMarca]" Version="V4">
+                    <uix:NGetText DisplayName="Get marca" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_95" TextString="[outMarca]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl class='a-span9' tag='TD' /&gt;" Guid="22846555-3540-48ac-af40-32f4f01cd478" SearchSteps="Selector" />
                       </uix:NGetText.Target>
                     </uix:NGetText>
                   </Sequence>
-                </TryCatch.Try>
-                <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_5">
-                    <ActivityAction x:TypeArguments="s:Exception">
-                      <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                      </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_24">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[outMarca]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">
-                              <Literal x:TypeArguments="x:String" Value="" />
-                            </InArgument>
-                          </Assign.Value>
-                        </Assign>
-                      </Sequence>
-                    </ActivityAction>
-                  </Catch>
-                </TryCatch.Catches>
-                <TryCatch.Finally>
-                  <Sequence DisplayName="Finalmente" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_42">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_11">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[outMarca]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
                   </Sequence>
-                </TryCatch.Finally>
-              </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_6">
-                <TryCatch.Try>
-                  <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl class='a-span9' tag='TD' /&gt;" Guid="0d74e8e4-7a32-4b0b-8c74-7efff4cc5f81" SearchSteps="Selector" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,491" sap2010:WorkflowViewState.IdRef="NCheckState_2" Timeout="2" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,242" sap2010:WorkflowViewState.IdRef="Sequence_43">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get material" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_96" TextString="[outMaterial]" Version="V4">
+                    <uix:NGetText DisplayName="Get material" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_96" TextString="[outMaterial]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="4c503184-8f6b-4534-b482-5e83c5e5bcb5" SearchSteps="Selector" />
                       </uix:NGetText.Target>
                     </uix:NGetText>
                   </Sequence>
-                </TryCatch.Try>
-                <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_6">
-                    <ActivityAction x:TypeArguments="s:Exception">
-                      <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                      </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_6">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[outMaterial]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">
-                              <Literal x:TypeArguments="x:String" Value="" />
-                            </InArgument>
-                          </Assign.Value>
-                        </Assign>
-                      </Sequence>
-                    </ActivityAction>
-                  </Catch>
-                </TryCatch.Catches>
-                <TryCatch.Finally>
-                  <Sequence DisplayName="Finalmente" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_44">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_12">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[outMaterial]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
                   </Sequence>
-                </TryCatch.Finally>
-              </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_7">
-                <TryCatch.Try>
-                  <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="b5ae2353-ba11-4252-9599-8a73a89d8b2e" SearchSteps="Selector" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,491" sap2010:WorkflowViewState.IdRef="NCheckState_3" Timeout="2" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,242" sap2010:WorkflowViewState.IdRef="Sequence_45">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get tema" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_97" TextString="[outTema]" Version="V4">
+                    <uix:NGetText DisplayName="Get tema" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_97" TextString="[outTema]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="6f301f8a-9057-4975-8ee0-e60c175b938c" SearchSteps="Selector" />
                       </uix:NGetText.Target>
                     </uix:NGetText>
                   </Sequence>
-                </TryCatch.Try>
-                <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_7">
-                    <ActivityAction x:TypeArguments="s:Exception">
-                      <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                      </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_30">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_7">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[outTema]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">
-                              <Literal x:TypeArguments="x:String" Value="" />
-                            </InArgument>
-                          </Assign.Value>
-                        </Assign>
-                      </Sequence>
-                    </ActivityAction>
-                  </Catch>
-                </TryCatch.Catches>
-                <TryCatch.Finally>
-                  <Sequence DisplayName="Finalmente" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_46">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_13">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[outTema]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
                   </Sequence>
-                </TryCatch.Finally>
-              </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_8">
-                <TryCatch.Try>
-                  <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="09175bf3-f72a-4263-887f-a29f05869654" SearchSteps="Selector" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,491" sap2010:WorkflowViewState.IdRef="NCheckState_4" Timeout="2" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,242" sap2010:WorkflowViewState.IdRef="Sequence_47">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get genero" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_98" TextString="[outGenero]" Version="V4">
+                    <uix:NGetText DisplayName="Get genero" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_98" TextString="[outGenero]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="02ab3cdb-695a-45cb-bc42-5c0d2ef7228b" SearchSteps="Selector" />
                       </uix:NGetText.Target>
                     </uix:NGetText>
                   </Sequence>
-                </TryCatch.Try>
-                <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_8">
-                    <ActivityAction x:TypeArguments="s:Exception">
-                      <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                      </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_33">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_8">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[outGenero]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">
-                              <Literal x:TypeArguments="x:String" Value="" />
-                            </InArgument>
-                          </Assign.Value>
-                        </Assign>
-                      </Sequence>
-                    </ActivityAction>
-                  </Catch>
-                </TryCatch.Catches>
-                <TryCatch.Finally>
-                  <Sequence DisplayName="Finalmente" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_48">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_14">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[outGenero]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
                   </Sequence>
-                </TryCatch.Finally>
-              </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_9">
-                <TryCatch.Try>
-                  <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="c30bb950-1ebd-4550-ad9e-f86b863ad1ee" SearchSteps="Selector" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,491" sap2010:WorkflowViewState.IdRef="NCheckState_5" Timeout="2" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,242" sap2010:WorkflowViewState.IdRef="Sequence_49">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get numero_jogadores" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_99" TextString="[outNumeroJogadores]" Version="V4">
+                    <uix:NGetText DisplayName="Get numero_jogadores" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_99" TextString="[outNumeroJogadores]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' idx='1' /&gt;" Guid="727edaae-bbbc-4808-836d-17e2590e45d5" SearchSteps="Selector" />
                       </uix:NGetText.Target>
                     </uix:NGetText>
                   </Sequence>
-                </TryCatch.Try>
-                <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_9">
-                    <ActivityAction x:TypeArguments="s:Exception">
-                      <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                      </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_36">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_9">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[outNumeroJogadores]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">
-                              <Literal x:TypeArguments="x:String" Value="" />
-                            </InArgument>
-                          </Assign.Value>
-                        </Assign>
-                      </Sequence>
-                    </ActivityAction>
-                  </Catch>
-                </TryCatch.Catches>
-                <TryCatch.Finally>
-                  <Sequence DisplayName="Finalmente" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_50">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_15">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[outNumeroJogadores]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
                   </Sequence>
-                </TryCatch.Finally>
-              </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,655" sap2010:WorkflowViewState.IdRef="TryCatch_10">
-                <TryCatch.Try>
-                  <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' idx='1' /&gt;" Guid="b357c371-d557-498d-8ec1-2a8861ca401c" SearchSteps="Selector" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,482" sap2010:WorkflowViewState.IdRef="NCheckState_6" Timeout="2" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,242" sap2010:WorkflowViewState.IdRef="Sequence_51">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get descricao" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_100" TextString="[outDescricao]" Version="V4">
+                    <uix:NGetText DisplayName="Get descricao" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_100" TextString="[outDescricao]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='feature-bullets' tag='LI' class='a-spacing-mini' /&gt;" Guid="e779ea3b-8102-4936-b7da-a7a62117e149" SearchSteps="Selector" />
                       </uix:NGetText.Target>
                     </uix:NGetText>
                   </Sequence>
-                </TryCatch.Try>
-                <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_10">
-                    <ActivityAction x:TypeArguments="s:Exception">
-                      <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                      </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_39">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_10">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[outDescricao]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">
-                              <Literal x:TypeArguments="x:String" Value="" />
-                            </InArgument>
-                          </Assign.Value>
-                        </Assign>
-                      </Sequence>
-                    </ActivityAction>
-                  </Catch>
-                </TryCatch.Catches>
-                <TryCatch.Finally>
-                  <Sequence DisplayName="Finalmente" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_52">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_16">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[outDescricao]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
                   </Sequence>
-                </TryCatch.Finally>
-              </TryCatch>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='feature-bullets' tag='LI' class='a-spacing-mini' /&gt;" Guid="1aa9e6db-40ed-4989-9ec2-897438445be8" SearchSteps="Selector" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>

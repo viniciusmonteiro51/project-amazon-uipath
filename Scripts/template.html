@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Especial na Amazon - {{nome_jogo}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #232f3e;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #232f3e;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff9900;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .details {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .divider {
+            border-top: 2px solid #ff9900;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 16px;
+            color: #555;
+        }
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 12px;
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .footer {
+            background-color: #232f3e;
+            text-align: center;
+            padding: 15px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Cabeçalho -->
+    <div class="header">🎮 Oferta Especial da Amazon! 🎮</div>
+
+    <!-- Corpo -->
+    <div class="content">
+        <div class="title">{{nome_jogo}}</div>
+        <div class="price">💲 {{preco}}</div>
+
+        <p class="details">📦 <strong>Enviado por:</strong> {{enviado_por}}</p>
+        <p class="details">🏷️ <strong>Vendido por:</strong> {{vendido_por}}</p>
+        <p class="details">🏭 <strong>Marca:</strong> {{marca}}</p>
+        <p class="details">🎭 <strong>Tema:</strong> {{tema}}</p>
+        <p class="details">🎮 <strong>Gênero:</strong> {{genero}}</p>
+        <p class="details">👥 <strong>Número de Jogadores:</strong> {{numero_jogadores}}</p>
+        <p class="details">🛠️ <strong>Material:</strong> {{material}}</p>
+
+        <div class="divider"></div>
+
+        <p class="description">📖 <strong>Descrição:</strong> {{descricao}}</p>
+
+        <!-- Botão de Compra -->
+        <a href="https://www.amazon.com" class="btn">🛒 Comprar Agora</a>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">© 2025 Amazon. Todos os direitos reservados.</div>
+</div>
+
+</body>
+</html>
