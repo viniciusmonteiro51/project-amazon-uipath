@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="P5xogiEhWUWHE0UIHujywQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Aprendendo-recursos-CrashApult-Challenge-catapulta/dp/B078WMDKL9/ref=sr_1_1_sspa" CVScreenId="b977c293-545b-4b0e-bfc9-b904dc67ce03" CvTextArea="970, 650, 155, 20" CvType="AnyWordGroup" DesignTimeRectangle="968, 642, 420, 32" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl class='a-span9' type='' tag='TD' aaname='       ' /&gt;" Guid="3e93b8a5-5fd1-4b1b-a2ca-d713745651ed" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Aprendendo recursos CrashApult STEM Challenge, jogo de catapulta de caça, 13 peças, idades mais de 5 | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b977c293-545b-4b0e-bfc9-b904dc67ce03" CvTextArea="817, 650, 51, 16" CvTextArgument="Marca" CvType="Text" DesignTimeRectangle="819, 642, 149, 32" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-span3' aaname='        ' check:innerText='Marca' /&gt;" Guid="382bc9f2-e661-4bb9-929b-5bfb17e6318a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9fdd02aeaeb8d82f142a74e6ce35bd84.png" xmlns="">0jgKIATluVUacmUId1G2EXg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
