@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Faixa etária (descrição)",
+  "Type": "Element",
+  "Id": "4nUv9i1t8UmXa5OvWDSvyA",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/4nUv9i1t8UmXa5OvWDSvyA",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/o47MHa1XE0Sg5v6NPO7Q7A",
+  "Created": "2025-03-14T13:36:46.0895608Z",
+  "Updated": "2025-03-14T13:36:46.0895608Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

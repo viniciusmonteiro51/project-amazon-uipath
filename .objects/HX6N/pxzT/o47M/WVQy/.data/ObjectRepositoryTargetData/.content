@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TwBP9QigGkm-O0GbunzKFA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.amazon.com.br/Jogo-B%C3%ADblico-Cartas-Quem-Sou/dp/6527700946/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=33EML5CEBJFKJ&amp;dib=eyJ2IjoiMSJ9.qsx_r3-EhOAfjfBx-E4jQAeYBUBKSKXz56oT9__jV750jnBWw7s09lQe8U-LtnWybGTLrcx_j7KbxdVvkdRSTHBYpS4XigGHmJkYYvVGck-LOQ8fOOHyo226DBvPlBOvYKGmfFiJBoODz0h14hW2i4_vhEDo_GLLiDpKF7WkuRjgvP_EmUw3CxK0WnjcHeDw6OTWMkn-cNg5vm_c78KCPiYeQWjAiGlKHFL5jo1SQZGe0_Xu8S05kbPE7mzVuf2UqbSXq70NBA-I_heUHSm4M4sfQ--oU3BVD_t6c0dfiS0.SIsDAjvWNcgHkFP4cst_b3YeN24wqrNx77yOlIIHDxc&amp;dib_tag=se&amp;keywords=jogos&amp;qid=1741965661&amp;sprefix=jo%2Caps%2C261&amp;sr=8-1-spons&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;psc=1" DesignTimeRectangle="54, 506, 784, 616" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;" Guid="8aeaedad-675d-4ae9-9ee0-4b55163d519a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jogo Bíblico de Cartas | Quem Sou Eu - Penkal | Amazon.com.br' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0d947c7ac6c2a09895ef07df3d3271b9.png" xmlns="">0sqit4KMedkC1FQAC3q0Zpw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0' IsDeleted='true'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='dados'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+&lt;/Table&gt;</p:InArgument>
+    <x:Null x:Key="NextLinkTarget" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

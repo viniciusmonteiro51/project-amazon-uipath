@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KskTvQOp_U-JjbV8g2M99g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Gonggi-Coreano-transporte-Gong-gi-Tradicional/dp/B0DT7MDGNW/ref=sr_1_1_sspa" CVScreenId="50a319af-34f8-4d7f-81f6-3c1d09c75a50" CvTextArea="460, 681, 71, 16" CvType="AnyWordGroup" DesignTimeRectangle="446, 670, 392, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="15c9324e-fd6c-4b50-b588-e88c35b1d486" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gonggi Jogo Coreano, Compre 1 e leve 2 Sets de 5 peças com estojo para transporte, Gong-gi Korean Game Squid, Jogo Tradicional Coreano, Round 6 | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="50a319af-34f8-4d7f-81f6-3c1d09c75a50" CvTextArea="52, 682, 51, 15" CvTextArgument="Marca" CvType="Text" DesignTimeRectangle="54, 670, 392, 40" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Marca ' check:innerText='Marca' /&gt;" Guid="6675e7a0-1549-4b6f-8ab7-687097b7dde0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0bc0e9295837e481abde306057d80845.png" xmlns="">06jJK_Gynk0C9LSQ9AB3CjQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

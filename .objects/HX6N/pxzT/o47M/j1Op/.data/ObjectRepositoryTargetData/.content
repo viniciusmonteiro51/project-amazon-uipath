@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NKYV7-4TC0KZ_2qVyuADbw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Gonggi-Coreano-transporte-Gong-gi-Tradicional/dp/B0DT7MDGNW/ref=sr_1_1_sspa" CVScreenId="62801ec4-8c32-4fb0-a763-014e3d594164" CvTextArea="460, 622, 83, 21" CvType="AnyWordGroup" DesignTimeRectangle="446, 612, 392, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="7f570661-8a18-402b-bd72-bdedc429bd8b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gonggi Jogo Coreano, Compre 1 e leve 2 Sets de 5 peças com estojo para transporte, Gong-gi Korean Game Squid, Jogo Tradicional Coreano, Round 6 | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="62801ec4-8c32-4fb0-a763-014e3d594164" CvTextArea="52, 624, 63, 16" CvTextArgument="Idioma:" CvType="Text" DesignTimeRectangle="54, 612, 392, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Idioma: ' check:innerText='Idioma:' /&gt;" Guid="bb2b6c20-f9d0-45fb-8727-be50174dec16" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="88ffe74baa02101206754e0d9c4f2bba.png" xmlns="">0rwchPuCuBka6wkfCHKIv3Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

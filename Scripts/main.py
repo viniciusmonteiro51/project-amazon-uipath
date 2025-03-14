@@ -4,10 +4,10 @@ import re
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-SMTP_SERVER = "smtp-mail.outlook.com"
+SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-EMAIL_REMETENTE = "devs.enviosautomatico@outlook.com"
-SENHA = "3YGx@gJ'2&&DTm3"
+EMAIL_REMETENTE= "dev.enviostestes@gmail.com"
+SENHA = "ynfh wgje uycv aqwa"
 
 EMAIL_ENVIO="dev.viniciusdanielmonteiro@gmail.com"
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-oMiqUVn10CM1GoTDolNVw" Reference="K5GWDZS8T0m1oHYHFx_EfQ/3JuoryTHOk-Mpjg4NVgWLg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-Perfil-Express-Filmes-S%C3%A9ries/dp/B0BV7KHL8J/ref=sr_1_1_sspa" CVScreenId="f320ccde-845d-42db-a76d-e01f294f0c4c" CvTextArea="459, 419, 43, 16" CvType="AnyWordGroup" DesignTimeRectangle="446, 407, 392, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="ffe77465-137c-49c2-b2bd-bf46082c5e7e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*| Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f320ccde-845d-42db-a76d-e01f294f0c4c" CvTextArea="52, 417, 161, 18" CvTextArgument="Número do modelo" CvType="Text" DesignTimeRectangle="54, 407, 392, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Número do modelo ' check:innerText='Número do modelo' /&gt;" Guid="d808d28c-dcd7-450b-a97b-90ec027dc3c5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6144c2e04f41f477ce3fadcf36870c47.png" xmlns="">0nkGh88RCMkeKSLe6WlVVgA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

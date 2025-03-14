@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-KtKeDpOu0mSAIn7fUwurQ" Reference="K5GWDZS8T0m1oHYHFx_EfQ/oMbLxnGlikOXbVfKLPz_rg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.amazon.com.br/Gonggi-Coreano-transporte-Gong-gi-Tradicional/dp/B0DT7MDGNW/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=38T22MQ6EK5NU&amp;dib=eyJ2IjoiMSJ9.qsx_r3-EhOAfjfBx-E4jQAeYBUBKSKXz56oT9__jV750jnBWw7s09lQe8U-LtnWybGTLrcx_j7KbxdVvkdRSTGAYi1gnRi0GSSoGSxyWADyRblBGcOuSX2MgGLJo5SUl5JbZlnJDZySvqN-rDBJs-o_vhEDo_GLLiDpKF7WkuRh_9v1tBJvexoyQm_BC7dT3TYCMCm25-g8Y_8ge-JodQyYeQWjAiGlKHFL5jo1SQZFwf30EqTnI5MFO_B8Ww2LgsjuBharXiybZiteC8JODNosfQ--oU3BVD_t6c0dfiS0.uZ-Zm-ovl3QP8TowTkjwRsn7cEjqh9ppPvp6-sqe5Pc&amp;dib_tag=se&amp;keywords=jogos&amp;qid=1741962505&amp;sprefix=jog%2Caps%2C242&amp;sr=8-1-spons&amp;ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;psc=1" DesignTimeRectangle="55, 355, 782, 705" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="9e83d058-2bea-4897-9f05-b0a0264a8341" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Amazon.com.br' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4858f492443be7022b04f29fd4abf2ae.png" xmlns="">0X6uLIjsBqEqmrtrRz0kKiA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='cabecalho'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='dados'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+&lt;/Table&gt;</p:InArgument>
+    <x:Null x:Key="NextLinkTarget" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="peBVHwoavEykdqAvRGdMCg" Reference="K5GWDZS8T0m1oHYHFx_EfQ/211dKdBFokuugdn7aGveGA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-Perfil-Express-Filmes-S%C3%A9ries/dp/B0BV7KHL8J/ref=sr_1_1_sspa" CVScreenId="37d99188-ec6f-4bfb-84c7-69606c39dd99" CvTextArea="459, 419, 43, 16" CvType="AnyWordGroup" DesignTimeRectangle="446, 407, 392, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="c06aec7a-90fe-4ebc-9541-d5fe95daada5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*| Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="37d99188-ec6f-4bfb-84c7-69606c39dd99" CvTextArea="52, 417, 161, 18" CvTextArgument="Número do modelo" CvType="Text" DesignTimeRectangle="54, 407, 392, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Número do modelo ' check:innerText='Número do modelo' /&gt;" Guid="7163eeff-4dde-419d-a9aa-b077a3b570d9" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="37d99188-ec6f-4bfb-84c7-69606c39dd99" CvTextArea="31, 355, 179, 21" CvTextArgument="Detalhes técnicos" CvType="Text" DesignTimeRectangle="32, 351, 397, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='prodDetails' tag='H1' type='' class='a-size-medium a-spacing-small' aaname='Detalhes técnicos' check:innerText='Detalhes técnicos' /&gt;" Guid="24a593c6-03a7-46b4-acad-e498d713bf04" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7d28cb3bd01d680fbb7972c0f113d689.png" xmlns="">0sfJDanNPDUCxoRanM2ipMg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

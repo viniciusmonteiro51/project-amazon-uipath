@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ExtrairDadosJogo" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ExtrairDadosJogo" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="outNomeJogo" Type="OutArgument(x:String)" />
     <x:Property Name="outPreco" Type="OutArgument(x:String)" />
@@ -138,6 +138,14 @@
       <x:String>Microsoft.CodeAnalysis.VisualBasic</x:String>
       <x:String>Microsoft.CodeAnalysis.VisualBasic.Syntax</x:String>
       <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>UiPath.Semantic.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.SWEntities.fd1906240814.Bundle</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -252,9 +260,12 @@
       <AssemblyReference>Microsoft.CodeAnalysis</AssemblyReference>
       <AssemblyReference>Microsoft.CodeAnalysis.VisualBasic</AssemblyReference>
       <AssemblyReference>Microsoft.CodeAnalysis.CSharp</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>fd1906240814.xod7YOec5B12jPr84wHu4x</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="ExtrairDadosJogo" sap:VirtualizedContainerService.HintSize="936,786.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="ExtrairDadosJogo" sap:VirtualizedContainerService.HintSize="1189,786.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Default="&lt;html app='chrome.exe' title=' * | Amazon.com.br' /&gt;" Name="seletorJanela" />
     </Flowchart.Variables>
@@ -403,13 +414,13 @@
           <av:Size x:Key="ShapeSize">110,70</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome JOGO ENIGMA DO LABIRINTO - Grow  Amazo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1040,5897" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Amazon" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="538,3140" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1006,5680" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="504,2923" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="dataTableGames" />
                 <Variable x:TypeArguments="x:String" Name="nome_jogo" />
@@ -429,7 +440,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,693" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,693" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_11">
                     <sap:WorkflowViewStateService.ViewState>
@@ -437,7 +448,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get nome_jogo" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_91" TextString="[outNomeJogo]" Version="V4">
+                    <uix:NGetText DisplayName="Get nome_jogo" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_91" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outNomeJogo]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl id='productTitle' tag='SPAN' /&gt;" Guid="66b1f012-69a0-4b9b-8157-7911a4b9a718" SearchSteps="Selector" />
                       </uix:NGetText.Target>
@@ -481,7 +492,7 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,662" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <sap:WorkflowViewStateService.ViewState>
@@ -489,7 +500,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get preco" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_92" TextString="[outPreco]" Version="V4">
+                    <uix:NGetText DisplayName="Get preco" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_92" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outPreco]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='corePriceDisplay_desktop_feature_div' tag='SPAN' /&gt;" Guid="a2e136f3-f086-40a4-8f79-dfbcf5957ab9" SearchSteps="Selector" />
                       </uix:NGetText.Target>
@@ -532,7 +543,7 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,662" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_17">
                     <sap:WorkflowViewStateService.ViewState>
@@ -540,7 +551,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get enviado_por" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_93" TextString="[outEnviadoPor]" Version="V4">
+                    <uix:NGetText DisplayName="Get enviado_por" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_93" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outEnviadoPor]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='fulfillerInfoFeature_feature_div' tag='SPAN' class='a-size-small offer-display-feature-text-message' /&gt;" Guid="ffe4cb71-d136-4858-b8e8-c97b328838c0" SearchSteps="Selector" />
                       </uix:NGetText.Target>
@@ -583,7 +594,7 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,662" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_20">
                     <sap:WorkflowViewStateService.ViewState>
@@ -591,7 +602,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get vendido_por" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_94" TextString="[outVendidoPor]" Version="V4">
+                    <uix:NGetText DisplayName="Get vendido_por" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NGetText_94" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outVendidoPor]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='merchantInfoFeature_feature_div' tag='SPAN' class='a-size-small offer-display-feature-text-message' /&gt;" Guid="9b61e6dd-2aa5-4da5-b086-9bc5a12a0c9a" SearchSteps="Selector" />
                       </uix:NGetText.Target>
@@ -599,10 +610,10 @@
                   </Sequence>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:InvalidOperationException" sap2010:WorkflowViewState.IdRef="Catch`1_14">
-                    <ActivityAction x:TypeArguments="s:InvalidOperationException">
+                  <Catch x:TypeArguments="ui:SelectorNotFoundException" sap2010:WorkflowViewState.IdRef="Catch`1_15">
+                    <ActivityAction x:TypeArguments="ui:SelectorNotFoundException">
                       <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="s:InvalidOperationException" Name="exception" />
+                        <DelegateInArgument x:TypeArguments="ui:SelectorNotFoundException" Name="exception" />
                       </ActivityAction.Argument>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_21">
                         <sap:WorkflowViewStateService.ViewState>
@@ -634,234 +645,18 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,493" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="2" Version="V4">
-                <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_41">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get marca" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_95" TextString="[outMarca]" Version="V4">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl class='a-span9' tag='TD' /&gt;" Guid="22846555-3540-48ac-af40-32f4f01cd478" SearchSteps="Selector" />
-                      </uix:NGetText.Target>
-                    </uix:NGetText>
-                  </Sequence>
-                </uix:NCheckState.IfExists>
-                <uix:NCheckState.IfNotExists>
-                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_42">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_11">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[outMarca]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </Assign.Value>
-                    </Assign>
-                  </Sequence>
-                </uix:NCheckState.IfNotExists>
-                <uix:NCheckState.Target>
-                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl class='a-span9' tag='TD' /&gt;" Guid="0d74e8e4-7a32-4b0b-8c74-7efff4cc5f81" SearchSteps="Selector" />
-                </uix:NCheckState.Target>
-              </uix:NCheckState>
-              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,491" sap2010:WorkflowViewState.IdRef="NCheckState_2" Timeout="2" Version="V4">
-                <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,242" sap2010:WorkflowViewState.IdRef="Sequence_43">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get material" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_96" TextString="[outMaterial]" Version="V4">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="4c503184-8f6b-4534-b482-5e83c5e5bcb5" SearchSteps="Selector" />
-                      </uix:NGetText.Target>
-                    </uix:NGetText>
-                  </Sequence>
-                </uix:NCheckState.IfExists>
-                <uix:NCheckState.IfNotExists>
-                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_44">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_12">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[outMaterial]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </Assign.Value>
-                    </Assign>
-                  </Sequence>
-                </uix:NCheckState.IfNotExists>
-                <uix:NCheckState.Target>
-                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="b5ae2353-ba11-4252-9599-8a73a89d8b2e" SearchSteps="Selector" />
-                </uix:NCheckState.Target>
-              </uix:NCheckState>
-              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,491" sap2010:WorkflowViewState.IdRef="NCheckState_3" Timeout="2" Version="V4">
-                <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,242" sap2010:WorkflowViewState.IdRef="Sequence_45">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get tema" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_97" TextString="[outTema]" Version="V4">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="6f301f8a-9057-4975-8ee0-e60c175b938c" SearchSteps="Selector" />
-                      </uix:NGetText.Target>
-                    </uix:NGetText>
-                  </Sequence>
-                </uix:NCheckState.IfExists>
-                <uix:NCheckState.IfNotExists>
-                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_46">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_13">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[outTema]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </Assign.Value>
-                    </Assign>
-                  </Sequence>
-                </uix:NCheckState.IfNotExists>
-                <uix:NCheckState.Target>
-                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="09175bf3-f72a-4263-887f-a29f05869654" SearchSteps="Selector" />
-                </uix:NCheckState.Target>
-              </uix:NCheckState>
-              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,491" sap2010:WorkflowViewState.IdRef="NCheckState_4" Timeout="2" Version="V4">
-                <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,242" sap2010:WorkflowViewState.IdRef="Sequence_47">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get genero" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_98" TextString="[outGenero]" Version="V4">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="02ab3cdb-695a-45cb-bc42-5c0d2ef7228b" SearchSteps="Selector" />
-                      </uix:NGetText.Target>
-                    </uix:NGetText>
-                  </Sequence>
-                </uix:NCheckState.IfExists>
-                <uix:NCheckState.IfNotExists>
-                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_48">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_14">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[outGenero]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </Assign.Value>
-                    </Assign>
-                  </Sequence>
-                </uix:NCheckState.IfNotExists>
-                <uix:NCheckState.Target>
-                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="c30bb950-1ebd-4550-ad9e-f86b863ad1ee" SearchSteps="Selector" />
-                </uix:NCheckState.Target>
-              </uix:NCheckState>
-              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,491" sap2010:WorkflowViewState.IdRef="NCheckState_5" Timeout="2" Version="V4">
-                <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,242" sap2010:WorkflowViewState.IdRef="Sequence_49">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get numero_jogadores" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_99" TextString="[outNumeroJogadores]" Version="V4">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' idx='1' /&gt;" Guid="727edaae-bbbc-4808-836d-17e2590e45d5" SearchSteps="Selector" />
-                      </uix:NGetText.Target>
-                    </uix:NGetText>
-                  </Sequence>
-                </uix:NCheckState.IfExists>
-                <uix:NCheckState.IfNotExists>
-                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_50">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_15">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[outNumeroJogadores]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </Assign.Value>
-                    </Assign>
-                  </Sequence>
-                </uix:NCheckState.IfNotExists>
-                <uix:NCheckState.Target>
-                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl tag='SPAN' class='a-size-base po-break-word' idx='1' /&gt;" Guid="b357c371-d557-498d-8ec1-2a8861ca401c" SearchSteps="Selector" />
-                </uix:NCheckState.Target>
-              </uix:NCheckState>
-              <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="972,482" sap2010:WorkflowViewState.IdRef="NCheckState_6" Timeout="2" Version="V4">
-                <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,242" sap2010:WorkflowViewState.IdRef="Sequence_51">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get descricao" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_100" TextString="[outDescricao]" Version="V4">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='feature-bullets' tag='LI' class='a-spacing-mini' /&gt;" Guid="e779ea3b-8102-4936-b7da-a7a62117e149" SearchSteps="Selector" />
-                      </uix:NGetText.Target>
-                    </uix:NGetText>
-                  </Sequence>
-                </uix:NCheckState.IfExists>
-                <uix:NCheckState.IfNotExists>
-                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_52">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_16">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[outDescricao]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </Assign.Value>
-                    </Assign>
-                  </Sequence>
-                </uix:NCheckState.IfNotExists>
-                <uix:NCheckState.Target>
-                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='*Amazon*' /&gt;&lt;webctrl parentid='feature-bullets' tag='LI' class='a-spacing-mini' /&gt;" Guid="1aa9e6db-40ed-4989-9ec2-897438445be8" SearchSteps="Selector" />
-                </uix:NCheckState.Target>
-              </uix:NCheckState>
+              <uix:NGetText DisplayName="Get Text 'Número do modelo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,182" sap2010:WorkflowViewState.IdRef="NGetText_97" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outMarca]" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/Jogo-Perfil-Express-Filmes-S%C3%A9ries/dp/B0BV7KHL8J/ref=sr_1_1_sspa" CVScreenId="37d99188-ec6f-4bfb-84c7-69606c39dd99" ContentHash="peBVHwoavEykdqAvRGdMCg" CvTextArea="459, 419, 43, 16" CvType="AnyWordGroup" DesignTimeRectangle="446, 407, 392, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="c06aec7a-90fe-4ebc-9541-d5fe95daada5" InformativeScreenshot="7d28cb3bd01d680fbb7972c0f113d689.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/211dKdBFokuugdn7aGveGA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*| Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="37d99188-ec6f-4bfb-84c7-69606c39dd99" CvTextArea="52, 417, 161, 18" CvTextArgument="Número do modelo" CvType="Text" DesignTimeRectangle="54, 407, 392, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Número do modelo ' check:innerText='Número do modelo' /&gt;" Guid="7163eeff-4dde-419d-a9aa-b077a3b570d9" SearchSteps="FuzzySelector, CV" />
+                        <uix:Target CVScreenId="37d99188-ec6f-4bfb-84c7-69606c39dd99" CvTextArea="31, 355, 179, 21" CvTextArgument="Detalhes técnicos" CvType="Text" DesignTimeRectangle="32, 351, 397, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='prodDetails' tag='H1' type='' class='a-size-medium a-spacing-small' aaname='Detalhes técnicos' check:innerText='Detalhes técnicos' /&gt;" Guid="24a593c6-03a7-46b4-acad-e498d713bf04" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XYIvtJfh3EW6DIZOQVOuVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-Bingo-Profissional-Cromado-Pedras/dp/B0DCQ6D161/ref=sr_1_3_sspa" CVScreenId="241ad35f-ccaf-49e9-9253-e28822d6e2d3" CvTextArea="340, 601, 71, 17" CvType="AnyWordGroup" DesignTimeRectangle="326, 591, 273, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl tableRow='14' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="9547776f-aaea-488e-89b8-59b2ccd0978c" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jogo De Bingo Profissional Cromado Nº 1 Com 75 Pedras - 300 Cartelas | Amazon.com.br' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="241ad35f-ccaf-49e9-9253-e28822d6e2d3" CvTextArea="54, 604, 50, 15" CvTextArgument="Marca" CvType="Text" DesignTimeRectangle="54, 591, 272, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl tableRow='14' tag='TH' /&gt;" Guid="0d3064b9-8d20-494f-8ffd-369d6698d3a4" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fd9045b562c47e8b5a0cbcb3d6a539ce.png" xmlns="">0wSzhInICsEGzTeJKtGKvyg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

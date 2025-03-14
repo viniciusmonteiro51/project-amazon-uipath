@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bnnvCwHDqkqTcBcTd8dvbg" Reference="K5GWDZS8T0m1oHYHFx_EfQ/4nUv9i1t8UmXa5OvWDSvyA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-B%C3%ADblico-Cartas-Quem-Sou/dp/6527700946/ref=sr_1_2_sspa" CVScreenId="f3c8db2a-1f6d-40bb-b040-72600df38a36" CvTextArea="969, 562, 56, 16" CvType="AnyWordGroup" DesignTimeRectangle="968, 559, 420, 54" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl class='a-span9' type='' tag='TD' aaname='       ' /&gt;" Guid="4c3294a8-23aa-4d52-b8df-c707b7a7fad3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="819, 560, 94, 47" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base a-text-bold' aaname='Faixa etária (descrição)' check:innerText='Faixa etária (descrição)' /&gt;" Guid="738ca129-a99f-4bd3-9998-d2b59d2e4a44" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="75b90e41a4a82af05e2ae77877931205.png" xmlns="">0pbl31fvhaEKHiQ-7q8JcSw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
