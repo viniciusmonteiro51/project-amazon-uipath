@@ -399,7 +399,11 @@
                         <Variable x:TypeArguments="p:PythonObject" Name="LoadPythonObj" />
                         <Variable x:TypeArguments="p:PythonObject" Name="invokePythonObj" />
                         <Variable x:TypeArguments="x:String" Name="resultPythonObj" />
-                        <Variable x:TypeArguments="x:String" Default="C:\Users\VINICIUSDANIEL\Desktop\destination.csv" Name="destinationPath" />
+                        <Variable x:TypeArguments="x:String" Name="destinationPath">
+                          <Variable.Default>
+                            <Literal x:TypeArguments="x:String">C:\Users\VINICIUSDANIEL\Documents\UiPath\projectAmazonExtract\Scripts\destination.csv</Literal>
+                          </Variable.Default>
+                        </Variable>
                         <Variable x:TypeArguments="x:String" Name="variable2" />
                       </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
