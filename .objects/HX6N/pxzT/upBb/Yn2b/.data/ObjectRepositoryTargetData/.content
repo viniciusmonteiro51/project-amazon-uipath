@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="acx8hZ5GIEeEWJCLmz3egA" Reference="K5GWDZS8T0m1oHYHFx_EfQ/Yn2b2mFKxU-qBzVBwNpQ5w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-B%C3%ADblico-Cartas-Quem-Sou/dp/6527700946/ref=sr_1_1_sspa" CVScreenId="6dc587f9-e1de-4ed8-bcf6-9a4c4ce8f318" CvTextArea="506, 419, 83, 20" CvType="AnyWordGroup" DesignTimeRectangle="492, 407, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="51beadb1-72d3-4193-8946-517b05bb67b6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="6dc587f9-e1de-4ed8-bcf6-9a4c4ce8f318" CvTextArea="66, 419, 63, 16" CvTextArgument="Idioma:" CvType="Text" DesignTimeRectangle="67, 407, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Idioma: ' check:innerText='Idioma:' /&gt;" Guid="e6699612-14fb-465b-99e8-8e0b0fd499cc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e3dace1142c6ba610d4aacf1b19fc59d.png" xmlns="">0GyAyvfMni0GEh5StlXP_hg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

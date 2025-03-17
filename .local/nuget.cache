@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6wD7oP1XJnk=",
+  "dgSpecHash": "5njvF+kOXH0=",
   "success": true,
   "projectFilePath": "C:\\Users\\VINICIUSDANIEL\\Documents\\UiPath\\projectAmazonExtract\\.local\\",
   "expectedPackageFiles": [
@@ -246,6 +246,7 @@
     "C:\\Users\\VINICIUSDANIEL\\.nuget\\packages\\uipath.officelibs\\1.0.0\\uipath.officelibs.1.0.0.nupkg.sha512",
     "C:\\Users\\VINICIUSDANIEL\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\uipath.opentelemetry.contracts.2.3.3.nupkg.sha512",
     "C:\\Users\\VINICIUSDANIEL\\.nuget\\packages\\uipath.platform\\24.12.3\\uipath.platform.24.12.3.nupkg.sha512",
+    "C:\\Users\\VINICIUSDANIEL\\.nuget\\packages\\uipath.python.activities\\1.9.0\\uipath.python.activities.1.9.0.nupkg.sha512",
     "C:\\Users\\VINICIUSDANIEL\\.nuget\\packages\\uipath.system.activities\\25.2.2\\uipath.system.activities.25.2.2.nupkg.sha512",
     "C:\\Users\\VINICIUSDANIEL\\.nuget\\packages\\uipath.system.activities.runtime\\25.2.2\\uipath.system.activities.runtime.25.2.2.nupkg.sha512",
     "C:\\Users\\VINICIUSDANIEL\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.2.2\\uipath.system.activities.runtime.windows.25.2.2.nupkg.sha512",

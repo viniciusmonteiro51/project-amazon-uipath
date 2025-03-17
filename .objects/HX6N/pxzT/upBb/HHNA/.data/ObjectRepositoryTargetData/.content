@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ILMi3n70F0Of0f1Why7gIg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-B%C3%ADblico-Cartas-Quem-Sou/dp/6527700946/ref=sr_1_1_sspa" CVScreenId="6dc587f9-e1de-4ed8-bcf6-9a4c4ce8f318" CvTextArea="505, 746, 21, 16" CvTextArgument="A1" CvType="Text" DesignTimeRectangle="492, 735, 426, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' aaname='                                                     ‎A1 ' check:innerText='‎A1' /&gt;" Guid="26beb7d9-e3bd-4bc9-a691-3904f8465485" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jogo Bíblico de Cartas | Quem Sou Eu - Penkal | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6dc587f9-e1de-4ed8-bcf6-9a4c4ce8f318" CvTextArea="66, 746, 202, 17" CvTextArgument="Referência do fabricante" CvType="Text" DesignTimeRectangle="67, 735, 425, 40" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Referência do fabricante ' check:innerText='Referência do fabricante' /&gt;" Guid="3e5ae064-4ab9-4d60-99f1-97ee41bd20ba" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ea2fda1c4eb6c315fb957aa4ee1aa147.png" xmlns="">0rYrA4JBQpUeiInjpirj2sA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

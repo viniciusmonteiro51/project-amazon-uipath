@@ -1,0 +1,14 @@
+﻿{
+  "Name": "‎Português(1)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "x3s7vpHfCkGu4_6YZc3eEA",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/x3s7vpHfCkGu4_6YZc3eEA",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/o47MHa1XE0Sg5v6NPO7Q7A",
+  "Created": "2025-03-17T13:56:39.8021132Z",
+  "Updated": "2025-03-17T13:56:39.8021132Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "ASIN",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "9C_lrygF502r9yVFX4hOLQ",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/9C_lrygF502r9yVFX4hOLQ",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/upBbaFozvEOJSCA-MoErxQ",
+  "Created": "2025-03-17T13:32:35.7667553Z",
+  "Updated": "2025-03-17T13:32:35.7667553Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

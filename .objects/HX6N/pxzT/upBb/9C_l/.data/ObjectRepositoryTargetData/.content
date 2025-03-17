@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OzfQHl9UwUynupXPpRvq3g" Reference="K5GWDZS8T0m1oHYHFx_EfQ/9C_lrygF502r9yVFX4hOLQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-B%C3%ADblico-Cartas-Quem-Sou/dp/6527700946/ref=sr_1_1_sspa" CVScreenId="6dc587f9-e1de-4ed8-bcf6-9a4c4ce8f318" CvTextArea="505, 829, 105, 16" CvType="AnyWordGroup" DesignTimeRectangle="492, 817, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="a49930d4-2935-4894-8740-1731a2954778" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6dc587f9-e1de-4ed8-bcf6-9a4c4ce8f318" CvTextArea="65, 829, 42, 16" CvTextArgument="ASIN" CvType="Text" DesignTimeRectangle="67, 817, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' ASIN ' check:innerText='ASIN' /&gt;" Guid="d414f3d6-8c8c-4b3d-9b4b-f04c4de30cc0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1727fc223b973486e4f7aa582db26056.png" xmlns="">0q8yN-rR_GkODVV5wdEW8UQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

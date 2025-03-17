@@ -5,6 +5,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.25.1-preview]",
+    "UiPath.Python.Activities": "[1.9.0]",
     "UiPath.System.Activities": "25.2.2",
     "UiPath.UIAutomation.Activities": "[25.2.1-preview]",
     "UiPath.WorkflowEvents.Activities": "[3.7.0]"

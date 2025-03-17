@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BHdaGDGm5kmSAHn6bBPF9A" Reference="K5GWDZS8T0m1oHYHFx_EfQ/69vqjsBrmEWtKybbuQK8Rg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Grow-4408-Jogo-Bloqueio/dp/B0CLMCHCJS/ref=sr_1_2_sspa" CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="506, 584, 43, 16" CvTextArgument="Grow" CvType="Text" DesignTimeRectangle="492, 572, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' aaname='* ' check:innerText='‎*' /&gt;" Guid="7da9354b-363c-4643-90b3-e13f4d26a4cd" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="66, 584, 87, 16" CvTextArgument="Fabricante" CvType="Text" DesignTimeRectangle="67, 572, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Fabricante ' check:innerText='Fabricante' /&gt;" Guid="47eb0c3a-f07d-41fa-aef6-652bd2a4073b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c25fea3be6cfae4b459f38100234ac2d.png" xmlns="">0-L_e550lQUudWrvDgxcc6g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

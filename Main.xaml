@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -137,6 +137,8 @@
       <x:String>UiPath.CSV.Activities</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Design.SWEntities.fd0142066575.Bundle</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -263,9 +265,11 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>fd0142066575.ELdEB2sdH6K1hNZuWSIlAM1</AssemblyReference>
       <AssemblyReference>fd1906240814.xod7YOec5B12jPr84wHu4x</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1172,2290" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1172,2869" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dataTableAmazonDados" />
       <Variable x:TypeArguments="x:String" Default="Jogos" Name="searchItem" />
@@ -274,57 +278,57 @@
       <Variable x:TypeArguments="sd:DataTable" Name="dataTableAmazonCabecalho" />
       <Variable x:TypeArguments="sd:DataTable" Name="dataTableFinal" />
       <Variable x:TypeArguments="sd:DataTable" Name="outTableTeste" />
+      <Variable x:TypeArguments="p:PythonObject" Name="pythonObject" />
+      <Variable x:TypeArguments="p:PythonObject" Name="invokePythonObj" />
+      <Variable x:TypeArguments="x:String" Name="resultPythonObj" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="616,2267" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="616,2846" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="582,2184" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313">
+      <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="582,2763" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="548,1943" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="548,2523" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="dataTableGames" />
                 <Variable x:TypeArguments="x:String" Name="nome_jogo" />
                 <Variable x:TypeArguments="x:String" Name="preco" />
                 <Variable x:TypeArguments="x:String" Name="enviado_por" />
                 <Variable x:TypeArguments="x:String" Name="vendido_por" />
-                <Variable x:TypeArguments="x:String" Name="marca" />
-                <Variable x:TypeArguments="x:String" Name="material" />
-                <Variable x:TypeArguments="x:String" Name="tema" />
-                <Variable x:TypeArguments="x:String" Name="genero" />
-                <Variable x:TypeArguments="x:String" Name="numero_jogadores" />
-                <Variable x:TypeArguments="x:String" Name="descricao" />
+                <Variable x:TypeArguments="x:String" Name="idioma" />
+                <Variable x:TypeArguments="x:String" Name="numero_modelo" />
+                <Variable x:TypeArguments="x:String" Name="fabricante" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Pesquisar &quot;Jogos&quot;" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="514,251" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" Text="[searchItem + &quot;[k(Enter)]&quot;]" Version="V4">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Pesquisar &quot;Jogos&quot;" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="514,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" Text="[searchItem + &quot;[k(Enter)]&quot;]" Version="V4">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="amazon.com.br/s" CVScreenId="3dda4160-8306-42f7-910e-4d870d1b48ba" ContentHash="9DlHY5QU-UGPvVnJjtx15Q" CvElementArea="680, 129, 737, 52" CvType="InputBox" DesignTimeRectangle="685, 196, 727, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' type='text' class='nav-input nav-progressive-attribute' placeholder='Pesquisar Amazon.com.br' aaname='Pesquisar Amazon.com.br' /&gt;" Guid="c5eabdc2-58f7-41f2-afc9-44fae6c56dc0" InformativeScreenshot="60e977376f77e8d6daeab853bea345ce.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/A8YT83dwfkyJPbbDUqmDOQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.br : jogos' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
                 </uix:NTypeInto.Target>
               </uix:NTypeInto>
-              <ui:BuildDataTable DataTable="[dataTableGames]" DisplayName="Criando tabela de dados" sap:VirtualizedContainerService.HintSize="514,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;nome_jogo&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;999&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;preco&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;enviado_por&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;vendido_por&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;marca&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;material&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;tema&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;genero&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;numero_jogadores&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;descricao&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+              <ui:BuildDataTable DataTable="[dataTableGames]" DisplayName="Criando tabela de dados" sap:VirtualizedContainerService.HintSize="514,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;nome_jogo&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;999&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;preco&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;enviado_por&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;vendido_por&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;idioma&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;numero_modelo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;fabricante&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
               <ui:BuildDataTable DataTable="[dataTableFinal]" DisplayName="Criando tabela final" sap:VirtualizedContainerService.HintSize="514,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;dados&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
-              <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="514,1265" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" Version="V4">
+              <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="514,1295" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" Version="V4">
                 <uix:NForEachUiElement.Body>
                   <ActivityAction x:TypeArguments="x:Int32">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,966" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,958" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="urlAtual" />
                       </Sequence.Variables>
@@ -333,7 +337,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,208" sap2010:WorkflowViewState.IdRef="NClick_5" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,205" sap2010:WorkflowViewState.IdRef="NClick_5" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" Version="V4">
                         <uix:NClick.VerifyOptions>
                           <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                             <uix:VerifyExecutionOptions.Retry>
@@ -345,7 +349,7 @@
                           </uix:VerifyExecutionOptions>
                         </uix:NClick.VerifyOptions>
                       </uix:NClick>
-                      <uix:NGetText DisplayName="Extração de URL" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" TextString="[url]" Version="V4">
+                      <uix:NGetText DisplayName="Extração de URL" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="84dc7cf2-6dd8-47d7-b85c-523b5e8f0313" TextString="[url]" Version="V4">
                         <uix:NGetText.Target>
                           <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="DNhn--eBg0WQZ59Mb72mOQ" DesignTimeRectangle="205, 72, 1407, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='* | Amazon.com.br - Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de pesquisa e endereço' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name=' * | Amazon.com.br - Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de pesquisa e endereço' role='editable text' automationid='' /&gt;" Guid="f347e778-0f25-4afa-8db4-a6cd3b6da2fd" InformativeScreenshot="609453ebf1ef083fa6177dd62c3d0239.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/8Hrwqrj-3k2xbh2n8OYeGg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='* | Amazon.com.br - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
                         </uix:NGetText.Target>
@@ -356,17 +360,14 @@
                           <OutArgument x:TypeArguments="x:String" x:Key="outPreco">[preco]</OutArgument>
                           <OutArgument x:TypeArguments="x:String" x:Key="outEnviadoPor">[enviado_por]</OutArgument>
                           <OutArgument x:TypeArguments="x:String" x:Key="outVendidoPor">[vendido_por]</OutArgument>
-                          <OutArgument x:TypeArguments="x:String" x:Key="outMarca">[marca]</OutArgument>
-                          <OutArgument x:TypeArguments="x:String" x:Key="outMaterial">[material]</OutArgument>
-                          <OutArgument x:TypeArguments="x:String" x:Key="outTema">[tema]</OutArgument>
-                          <OutArgument x:TypeArguments="x:String" x:Key="outGenero">[genero]</OutArgument>
-                          <OutArgument x:TypeArguments="x:String" x:Key="outNumeroJogadores">[numero_jogadores]</OutArgument>
-                          <OutArgument x:TypeArguments="x:String" x:Key="outDescricao">[descricao]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outIdioma">[idioma]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outNumeroModelo">[numero_modelo]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="outFabricante">[fabricante]</OutArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="url">[url]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{nome_jogo, preco, enviado_por, vendido_por, marca, material, tema, genero, numero_jogadores, descricao }]" DataTable="[dataTableGames]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,221" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                      <uix:NNavigateBrowser DisplayName="Navigate Browser - Voltar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V4" />
+                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{nome_jogo, preco, enviado_por, vendido_por, idioma, numero_modelo, fabricante }]" DataTable="[dataTableGames]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                      <uix:NNavigateBrowser DisplayName="Navigate Browser - Voltar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,107" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V4" />
                     </Sequence>
                   </ActivityAction>
                 </uix:NForEachUiElement.Body>
@@ -376,6 +377,7 @@
                 <uix:NForEachUiElement.Variables>
                   <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
                   <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+                  <Variable x:TypeArguments="p:PythonObject" Name="invokePythonObj" />
                 </uix:NForEachUiElement.Variables>
                 <uix:NForEachUiElement.VariablesMetadata>
                   <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
@@ -384,7 +386,35 @@
                   </scg:List>
                 </uix:NForEachUiElement.VariablesMetadata>
               </uix:NForEachUiElement>
-              <ui:WriteCsvFile AddHeaders="True" DataTable="[dataTableGames]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[destinationFile]" sap:VirtualizedContainerService.HintSize="514,181" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+              <ui:WriteCsvFile AddHeaders="True" DataTable="[dataTableGames]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[destinationFile]" sap:VirtualizedContainerService.HintSize="514,186" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+              <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="514,546" sap2010:WorkflowViewState.IdRef="PythonScope_3" LibraryPath="C:\Users\VINICIUSDANIEL\AppData\Local\Programs\Python\Python39" Path="C:\Users\VINICIUSDANIEL\AppData\Local\Programs\Python\Python39" TargetPlatform="x64" Version="Python 3.9" WorkingFolder="C:\Users\VINICIUSDANIEL\Documents\UiPath\projectAmazonExtract\Scripts\">
+                <p:PythonScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,484" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="p:PythonObject" Name="pythonObject" />
+                        <Variable x:TypeArguments="p:PythonObject" Name="LoadPythonObj" />
+                        <Variable x:TypeArguments="p:PythonObject" Name="invokePythonObj" />
+                        <Variable x:TypeArguments="x:String" Name="resultPythonObj" />
+                        <Variable x:TypeArguments="x:String" Default="C:\Users\VINICIUSDANIEL\Desktop\destination.csv" Name="destinationPath" />
+                        <Variable x:TypeArguments="x:String" Name="variable2" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="LoadScript_2" Result="[pythonObject]" ScriptFile="C:\Users\VINICIUSDANIEL\Documents\UiPath\projectAmazonExtract\Scripts\main.py" />
+                      <p:InvokeMethod DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="416,112" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" Instance="[pythonObject]" Name="sendMailGames" Parameters="[{destinationPath}]" Result="[invokePythonObj]" />
+                      <p:GetObject x:TypeArguments="x:String" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="416,112" sap2010:WorkflowViewState.IdRef="GetObject`1_3" PythonObject="[invokePythonObj]" Result="[resultPythonObj]" />
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[resultPythonObj]" />
+                    </Sequence>
+                  </ActivityAction>
+                </p:PythonScope.Body>
+              </p:PythonScope>
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>

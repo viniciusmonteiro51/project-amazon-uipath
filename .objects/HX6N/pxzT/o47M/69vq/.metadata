@@ -1,0 +1,14 @@
+﻿{
+  "Name": "‎Grow",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "69vqjsBrmEWtKybbuQK8Rg",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/69vqjsBrmEWtKybbuQK8Rg",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/o47MHa1XE0Sg5v6NPO7Q7A",
+  "Created": "2025-03-17T14:03:18.4918387Z",
+  "Updated": "2025-03-17T14:03:18.4918387Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jocQLRc2D0WZTqkKPRTKog" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-B%C3%ADblico-Cartas-Quem-Sou/dp/6527700946/ref=sr_1_1_sspa" CVScreenId="6dc587f9-e1de-4ed8-bcf6-9a4c4ce8f318" CvTextArea="506, 419, 83, 20" CvTextArgument="Português" CvType="Text" DesignTimeRectangle="492, 407, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' aaname='                                                     ‎Português ' check:innerText='‎Português' /&gt;" Guid="806ec1b5-f279-4981-b20b-c1dbedd6a98e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jogo Bíblico de Cartas | Quem Sou Eu - Penkal | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6dc587f9-e1de-4ed8-bcf6-9a4c4ce8f318" CvTextArea="66, 419, 63, 16" CvTextArgument="Idioma:" CvType="Text" DesignTimeRectangle="67, 407, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Idioma: ' check:innerText='Idioma:' /&gt;" Guid="bb150e1f-2fc0-4fbb-a7a0-67b9bd7e352c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bb15f91cc2a3ae299445e095c5c8a469.png" xmlns="">0n5VxoWRAz0uN7TrnPxpxBw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

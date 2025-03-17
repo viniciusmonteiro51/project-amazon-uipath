@@ -12,22 +12,21 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "fabricante&Sequence_3",
+        "numero_modelo&Sequence_3",
+        "idioma&Sequence_3",
+        "outTableTeste&Sequence_1",
+        "dataTableFinal&Sequence_1",
+        "dataTableAmazonDados&Sequence_1",
+        "dataTableAmazonCabecalho&Sequence_1",
         "urlAtual&Sequence_4",
-        "variable1&Sequence_4",
         "url&Sequence_1",
-        "descricao&Sequence_3",
-        "numero_jogadores&Sequence_3",
-        "genero&Sequence_3",
-        "tema&Sequence_3",
-        "material&Sequence_3",
-        "marca&Sequence_3",
         "vendido_por&Sequence_3",
         "enviado_por&Sequence_3",
         "preco&Sequence_3",
         "nome_jogo&Sequence_3",
         "dataTableGames&Sequence_3",
         "destinationFile&Sequence_1",
-        "dataTableAmazon&Sequence_1",
         "searchItem&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
@@ -65,18 +64,29 @@
         "seletorJanela&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [
+        "outFabricante",
+        "outNumeroModelo",
+        "outIdioma",
         "url",
-        "outDescricao",
-        "outNumeroJogadores",
-        "outGenero",
-        "outTema",
-        "outMaterial",
-        "outMarca",
         "outVendidoPor",
         "outEnviadoPor",
         "outPreco",
         "outNomeJogo"
       ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SequênciaTeste.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "resultPythonObj&Sequence_4",
+        "invokePythonObj&Sequence_4",
+        "LoadPythonObj&Sequence_4",
+        "pythonObject&Sequence_4",
+        "script_path&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }

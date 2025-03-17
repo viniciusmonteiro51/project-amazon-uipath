@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_HfHimMPaE27YEnJuhMzdQ" Reference="K5GWDZS8T0m1oHYHFx_EfQ/u5gW3ehBFEC9FDsgg2qW6Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-B%C3%ADblico-Cartas-Quem-Sou/dp/6527700946/ref=sr_1_1_sspa" CVScreenId="6dc587f9-e1de-4ed8-bcf6-9a4c4ce8f318" CvTextArea="506, 419, 83, 20" CvTextArgument="Português" CvType="Text" DesignTimeRectangle="492, 407, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' aaname='                                                     ‎Português ' check:innerText='‎Português' /&gt;" Guid="420f040f-54eb-4008-afdc-9e8c14eefcf2" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6dc587f9-e1de-4ed8-bcf6-9a4c4ce8f318" CvTextArea="66, 419, 63, 16" CvTextArgument="Idioma:" CvType="Text" DesignTimeRectangle="67, 407, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Idioma: ' check:innerText='Idioma:' /&gt;" Guid="8b7ac8ed-e511-4f05-a4ce-29955499ce1e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="312b215a88b0070a62bf01426b754e0c.png" xmlns="">0KbQdTrQEdke_92_TVWpK1A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

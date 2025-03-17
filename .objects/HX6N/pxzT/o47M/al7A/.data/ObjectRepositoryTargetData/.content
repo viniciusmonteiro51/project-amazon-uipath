@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FbdtCP26Wk-pprsS_0fDzA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Grow-4408-Jogo-Bloqueio/dp/B0CLMCHCJS/ref=sr_1_2_sspa" CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="506, 255, 82, 20" CvType="AnyWordGroup" DesignTimeRectangle="492, 244, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="23e1ed88-771f-4ef8-bbd4-a20b953fa88e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jogo Bloqueio Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="66, 255, 63, 17" CvTextArgument="Idioma:" CvType="Text" DesignTimeRectangle="67, 244, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Idioma: ' check:innerText='Idioma:' /&gt;" Guid="1c13ff4a-3276-4805-84e8-6c275b42ed16" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="15a46568d7da903c49c95d701eb2fc8d.png" xmlns="">0eDxJmfkkHk-SnqRwayQaKA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

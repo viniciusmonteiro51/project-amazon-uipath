@@ -4,13 +4,10 @@
     <x:Property Name="outPreco" Type="OutArgument(x:String)" />
     <x:Property Name="outEnviadoPor" Type="OutArgument(x:String)" />
     <x:Property Name="outVendidoPor" Type="OutArgument(x:String)" />
-    <x:Property Name="outMarca" Type="OutArgument(x:String)" />
-    <x:Property Name="outMaterial" Type="OutArgument(x:String)" />
-    <x:Property Name="outTema" Type="OutArgument(x:String)" />
-    <x:Property Name="outGenero" Type="OutArgument(x:String)" />
-    <x:Property Name="outNumeroJogadores" Type="OutArgument(x:String)" />
-    <x:Property Name="outDescricao" Type="OutArgument(x:String)" />
     <x:Property Name="url" Type="InArgument(x:String)" />
+    <x:Property Name="outIdioma" Type="OutArgument(x:String)" />
+    <x:Property Name="outNumeroModelo" Type="OutArgument(x:String)" />
+    <x:Property Name="outFabricante" Type="OutArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -333,7 +330,7 @@
                   <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="PAHENZ0qfUe-40MX_YMLeA" DesignTimeRectangle="1695, 749, 106, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='merchantInfoFeature_feature_div' tag='SPAN' type='' class='a-size-small offer-display-feature-text-message' /&gt;" Guid="91a003c5-4b78-44cf-86e7-3871cb685f79" InformativeScreenshot="a8a0cf9f8dfbc32c76860d81eb8bcf6f.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/f-kPJCZsxUCGu9P_M-brEQ" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="GET marca" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_51" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outMarca]" Version="V4">
+              <uix:NGetText DisplayName="GET marca" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_51" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outIdioma]" Version="V4">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="-rcuLmrUJUyFObf32QKBOw" DesignTimeRectangle="1067, 479, 42, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="2ecf7ab3-540f-4972-910c-0a40d2f76540" InformativeScreenshot="00a3ea83862d74cb38acee3b5e6a0a89.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/K1FJtFlA5U6siI5hrBy5eQ" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -355,7 +352,7 @@
                   </uix:TargetAnchorable>
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="GET tema" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_55" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outTema]" Version="V4">
+              <uix:NGetText DisplayName="GET tema" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_55" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outNumeroModelo]" Version="V4">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="qliTGNqjm0yuOdLuCQaanA" DesignTimeRectangle="1067, 544, 72, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="252d8dd9-0d27-4e49-b6e3-c14917897f9a" InformativeScreenshot="42762b852417ca5e1eb4dfa806d4bf55.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/3iRdfrXLqES-dXpHPjTpUQ" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -366,7 +363,7 @@
                   </uix:TargetAnchorable>
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="GET genero" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_54" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outGenero]" Version="V4">
+              <uix:NGetText DisplayName="GET genero" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_54" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outFabricante]" Version="V4">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="SN_vwOClEkCq03GvYN_Xag" DesignTimeRectangle="1067, 577, 80, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="c729ab1a-5880-4c6c-a28c-93523e28c46f" InformativeScreenshot="3563dae4a98218d05347fc6989649b4a.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/eBc9sHGvxES0fkY-DcrhtQ" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -377,7 +374,7 @@
                   </uix:TargetAnchorable>
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="GET numero_jogadores" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_52" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outNumeroJogadores]" Version="V4">
+              <uix:NGetText DisplayName="GET numero_jogadores" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_52" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outCor]" Version="V4">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="V54AgcMBJEuY3qmMS9d5xg" DesignTimeRectangle="1067, 609, 27, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productOverview_feature_div' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='a-size-base po-break-word' /&gt;" Guid="0887c306-1952-4cbf-8728-73e069572645" InformativeScreenshot="ce7fde9e775d207a0394c09b5463287c.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/iV8gXxId-k-bxZU0E47zEw" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -388,7 +385,7 @@
                   </uix:TargetAnchorable>
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="GET descricao" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,183" sap2010:WorkflowViewState.IdRef="NGetText_53" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outDescricao]" Version="V4">
+              <uix:NGetText DisplayName="GET descricao" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,183" sap2010:WorkflowViewState.IdRef="NGetText_53" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outIdadeRecomendada]" Version="V4">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable BrowserURL="amazon.com.br/JOGO-ENIGMA-DO-LABIRINTO-Grow/dp/B0DD4YN513/ref=sr_1_1_sspa" ContentHash="LwEZZwTTi0Kh_DF7AYRTsg" DesignTimeRectangle="918, 722, 619, 175" DesignTimeScaleFactor="1.25" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl parentid='feature-bullets' tag='LI' type='' class='a-spacing-mini' aaname='' /&gt;" Guid="9c6387fa-e529-4f69-a929-8e2a1dea953d" InformativeScreenshot="71f9f923d7f33e64c81bfc2c13fd27a4.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/QI0e2oROZ0S6N3YlGkqi7w" ScopeSelectorArgument="[seletorJanela]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -414,13 +411,13 @@
           <av:Size x:Key="ShapeSize">110,70</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Amazon" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="538,3140" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Amazon" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1040,4430" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="504,2923" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1006,4213" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="dataTableGames" />
                 <Variable x:TypeArguments="x:String" Name="nome_jogo" />
@@ -440,7 +437,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,693" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,693" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_11">
                     <sap:WorkflowViewStateService.ViewState>
@@ -492,7 +489,7 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,662" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <sap:WorkflowViewStateService.ViewState>
@@ -543,7 +540,7 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,662" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_17">
                     <sap:WorkflowViewStateService.ViewState>
@@ -594,7 +591,7 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,662" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,662" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                 <TryCatch.Try>
                   <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,240" sap2010:WorkflowViewState.IdRef="Sequence_20">
                     <sap:WorkflowViewStateService.ViewState>
@@ -645,18 +642,158 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <uix:NGetText DisplayName="Get Text 'Número do modelo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,182" sap2010:WorkflowViewState.IdRef="NGetText_97" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outMarca]" Version="V4">
-                <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="amazon.com.br/Jogo-Perfil-Express-Filmes-S%C3%A9ries/dp/B0BV7KHL8J/ref=sr_1_1_sspa" CVScreenId="37d99188-ec6f-4bfb-84c7-69606c39dd99" ContentHash="peBVHwoavEykdqAvRGdMCg" CvTextArea="459, 419, 43, 16" CvType="AnyWordGroup" DesignTimeRectangle="446, 407, 392, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="c06aec7a-90fe-4ebc-9541-d5fe95daada5" InformativeScreenshot="7d28cb3bd01d680fbb7972c0f113d689.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/211dKdBFokuugdn7aGveGA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*| Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+              <uix:NCheckState DisplayName="Check Idioma" sap:VirtualizedContainerService.HintSize="972,493" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="GET Idioma" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_98" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outIdioma]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon.com.br/Grow-4408-Jogo-Bloqueio/dp/B0CLMCHCJS/ref=sr_1_2_sspa" CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" ContentHash="FbdtCP26Wk-pprsS_0fDzA" CvTextArea="506, 255, 82, 20" CvType="AnyWordGroup" DesignTimeRectangle="492, 244, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="23e1ed88-771f-4ef8-bbd4-a20b953fa88e" InformativeScreenshot="15a46568d7da903c49c95d701eb2fc8d.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/al7AON1oXkq6Kh2bzn0FSA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jogo Bloqueio Grow | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="66, 255, 63, 17" CvTextArgument="Idioma:" CvType="Text" DesignTimeRectangle="67, 244, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Idioma: ' check:innerText='Idioma:' /&gt;" Guid="1c13ff4a-3276-4805-84e8-6c275b42ed16" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[outIdioma]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/Grow-4408-Jogo-Bloqueio/dp/B0CLMCHCJS/ref=sr_1_2_sspa" CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" ContentHash="x5svLy-nekGUmf0rFz32Pw" CvTextArea="506, 255, 82, 20" CvTextArgument="Português" CvType="Text" DesignTimeRectangle="492, 244, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' aaname='                                                     ‎Português ' check:innerText='‎Português' /&gt;" Guid="f412b772-3698-4faf-b70f-998153540588" InformativeScreenshot="c2ba8a791bf93ae99b4bc14b72105f12.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/x3s7vpHfCkGu4_6YZc3eEA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                        <uix:Target CVScreenId="37d99188-ec6f-4bfb-84c7-69606c39dd99" CvTextArea="52, 417, 161, 18" CvTextArgument="Número do modelo" CvType="Text" DesignTimeRectangle="54, 407, 392, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Número do modelo ' check:innerText='Número do modelo' /&gt;" Guid="7163eeff-4dde-419d-a9aa-b077a3b570d9" SearchSteps="FuzzySelector, CV" />
-                        <uix:Target CVScreenId="37d99188-ec6f-4bfb-84c7-69606c39dd99" CvTextArea="31, 355, 179, 21" CvTextArgument="Detalhes técnicos" CvType="Text" DesignTimeRectangle="32, 351, 397, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='prodDetails' tag='H1' type='' class='a-size-medium a-spacing-small' aaname='Detalhes técnicos' check:innerText='Detalhes técnicos' /&gt;" Guid="24a593c6-03a7-46b4-acad-e498d713bf04" SearchSteps="FuzzySelector, CV" />
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="66, 255, 63, 17" CvTextArgument="Idioma:" CvType="Text" DesignTimeRectangle="67, 244, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Idioma: ' check:innerText='Idioma:' /&gt;" Guid="b9e51713-373f-4861-be09-8c6328792788" SearchSteps="FuzzySelector, CV" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
                   </uix:TargetAnchorable>
-                </uix:NGetText.Target>
-              </uix:NGetText>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check Número do Modelo" sap:VirtualizedContainerService.HintSize="972,493" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="GET Numero do Modelo" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_99" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outNumeroModelo]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon.com.br/Grow-4408-Jogo-Bloqueio/dp/B0CLMCHCJS/ref=sr_1_2_sspa" CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" ContentHash="dlrFHaRzCkO41bcdLrHbQw" CvTextArea="505, 297, 43, 15" CvType="AnyWordGroup" DesignTimeRectangle="492, 285, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="a5bc271d-3e7d-4798-943b-0dc9c53ee96c" InformativeScreenshot="d4abc2bd393f589575ca3e9633376d1a.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/dSoauD-IxEmKuSt0udMMbg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                              <uix:Target CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="66, 296, 159, 16" CvTextArgument="Número do modelo" CvType="Text" DesignTimeRectangle="67, 285, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Número do modelo ' check:innerText='Número do modelo' /&gt;" Guid="6783df07-2e40-467b-aa08-702b5dea662b" SearchSteps="FuzzySelector, CV" />
+                              <uix:Target CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="44, 194, 178, 20" CvTextArgument="Detalhes técnicos" CvType="Text" DesignTimeRectangle="44, 189, 430, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='prodDetails' tag='H1' type='' class='a-size-medium a-spacing-small' aaname='Detalhes técnicos' check:innerText='Detalhes técnicos' /&gt;" Guid="abbb45e0-84e5-4520-bfed-253b6eb990c9" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[outNumeroModelo]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/Grow-4408-Jogo-Bloqueio/dp/B0CLMCHCJS/ref=sr_1_2_sspa" CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" ContentHash="o8tNWrpmO0mFGoXek3j61Q" CvTextArea="505, 297, 43, 15" CvTextArgument="4408" CvType="Text" DesignTimeRectangle="492, 285, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' aaname=' * ' check:innerText='‎*' /&gt;" Guid="314a5e5a-c70f-48db-8718-40c6ab7cc894" InformativeScreenshot="690a80c64d5d03c48186205460f546d0.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/mx8fna2zb0CQLbAbeAiKXw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="66, 296, 159, 16" CvTextArgument="Número do modelo" CvType="Text" DesignTimeRectangle="67, 285, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Número do modelo ' check:innerText='Número do modelo' /&gt;" Guid="f14574d5-e99c-47cd-ab3a-dc17afa7852f" SearchSteps="FuzzySelector, CV" />
+                        <uix:Target CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="44, 194, 178, 20" CvTextArgument="Detalhes técnicos" CvType="Text" DesignTimeRectangle="44, 189, 430, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='prodDetails' tag='H1' type='' class='a-size-medium a-spacing-small' aaname='Detalhes técnicos' check:innerText='Detalhes técnicos' /&gt;" Guid="cad5aba5-7f76-4757-91f4-51e42d5d18f8" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check Fabricante" sap:VirtualizedContainerService.HintSize="972,486" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="GET Fabricante" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_100" ScopeIdentifier="9cb93a0e-4894-444e-83c6-937e48b1ceba" TextString="[outFabricante]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon.com.br/Grow-4408-Jogo-Bloqueio/dp/B0CLMCHCJS/ref=sr_1_2_sspa" CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" ContentHash="f7GiWXDyhEO_pyTo8OE3Dg" CvTextArea="506, 584, 43, 16" CvType="AnyWordGroup" DesignTimeRectangle="492, 572, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' /&gt;" Guid="42da7f3a-db5d-4192-84fd-d7ce18537a74" InformativeScreenshot="004b6073b885c5f8a286c9b42d9d8048.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/wg07ZlKR7kyVQOZFLyaPoA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="66, 584, 87, 16" CvTextArgument="Fabricante" CvType="Text" DesignTimeRectangle="67, 572, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Fabricante ' check:innerText='Fabricante' /&gt;" Guid="b616689f-9d1d-4edd-8b1f-8777995fd18d" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Catch" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_7">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[outFabricante]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="amazon.com.br/Grow-4408-Jogo-Bloqueio/dp/B0CLMCHCJS/ref=sr_1_2_sspa" CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" ContentHash="BHdaGDGm5kmSAHn6bBPF9A" CvTextArea="506, 584, 43, 16" CvTextArgument="Grow" CvType="Text" DesignTimeRectangle="492, 572, 426, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='a-size-base prodDetAttrValue' aaname='* ' check:innerText='‎*' /&gt;" Guid="7da9354b-363c-4643-90b3-e13f4d26a4cd" InformativeScreenshot="c25fea3be6cfae4b459f38100234ac2d.png" Reference="K5GWDZS8T0m1oHYHFx_EfQ/69vqjsBrmEWtKybbuQK8Rg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="d857a23c-6bdd-485b-8f96-cf99c09a3933" CvTextArea="66, 584, 87, 16" CvTextArgument="Fabricante" CvType="Text" DesignTimeRectangle="67, 572, 425, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productDetails_techSpec_section_1' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='a-color-secondary a-size-base prodDetSectionEntry' aaname=' Fabricante ' check:innerText='Fabricante' /&gt;" Guid="47eb0c3a-f07d-41fa-aef6-652bd2a4073b" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
