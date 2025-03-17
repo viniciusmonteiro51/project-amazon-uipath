@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-9NXCxpO102QeV7WyVXiSA" Reference="K5GWDZS8T0m1oHYHFx_EfQ/DHsrpZ4aBUufAtqBVkPRLA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-Bingo-Profissional-Cromado-Pedras/dp/B0DCQ6D161/ref=sr_1_1_sspa" CVScreenId="9010a91d-10c7-42d8-840a-cda2dddb0c80" CvTextArea="196, 77, 1416, 22" CvType="AnyWordGroup" DesignTimeRectangle="159, 66, 1508, 43" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="3795587c-d4e2-458c-9442-94886d5d0d96" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="9010a91d-10c7-42d8-840a-cda2dddb0c80" CvElementArea="54, 13, 299, 46" CvType="Button" DesignTimeRectangle="44, 9, 320, 52" ElementType="TabPage" FullSelectorArgument="&lt;ctrl name='Jogo De Bingo Profissional Cromado Nº 1 Com 75 Pedras - 300 Cart*' role='pane' /&gt;&lt;ctrl name='Jogo De Bingo Profissional Cromado Nº 1 Com 75 Pedras - 300 Cart*' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Jogo De Bingo Profissional Cromado Nº 1 Com 75 Pedras - 300 Cart*' role='pane' /&gt;&lt;ctrl name='Jogo De Bingo Profissional Cromado Nº 1 Com 75 Pedras - 300 Cart*' role='page tab' automationid='' check:fulltext='Fechar' /&gt;" Guid="34f57dc6-b498-4ae6-9287-7972cc728cc0" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7d7a11b446e33fc6614afeccd44e4754.png" xmlns="">0QfDtlP3iK0WhIszvAs7kbg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

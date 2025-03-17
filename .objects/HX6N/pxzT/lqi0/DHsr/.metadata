@@ -1,0 +1,13 @@
+﻿{
+  "Name": "amazon.com.brJogo-Bing…",
+  "Type": "Element",
+  "Id": "DHsrpZ4aBUufAtqBVkPRLA",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/DHsrpZ4aBUufAtqBVkPRLA",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/lqi0rQCvGkq8AJp2sCJ0pg",
+  "Created": "2025-03-17T20:07:02.6982266Z",
+  "Updated": "2025-03-17T20:07:02.6982266Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "amazon.com.brJogo-Dard…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "MkMNrufBI0C9Y_249NCkSw",
+  "Reference": "K5GWDZS8T0m1oHYHFx_EfQ/MkMNrufBI0C9Y_249NCkSw",
+  "ParentRef": "K5GWDZS8T0m1oHYHFx_EfQ/lqi0rQCvGkq8AJp2sCJ0pg",
+  "Created": "2025-03-17T19:13:54.3343299Z",
+  "Updated": "2025-03-17T19:13:54.3343299Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

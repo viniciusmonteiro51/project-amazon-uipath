@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9jN0-B4jik6q-KbDjihUKQ" Reference="K5GWDZS8T0m1oHYHFx_EfQ/MkMNrufBI0C9Y_249NCkSw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-Dardos-acerte-alvo-flechas/dp/B0DXXP9T26/ref=sr_1_60_sspa" CVScreenId="8c926304-ebd1-417d-be3e-c302c262c24d" CvElementArea="152, 65, 1556, 42" CvType="InputBox" DesignTimeRectangle="205, 72, 1452, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='*' /&gt;&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='Barra de pesquisa e endereço' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='Barra de pesquisa e endereço' role='editable text' automationid='' /&gt;" Guid="ffc362b3-6493-4bfd-b62f-af9c8c65a7f5" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='*s : Amazon.com.br: Espor*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f21463e99281b28c24c9427777c62624.png" xmlns="">0-mK5o5ToJUOuzhlXeg2dLQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

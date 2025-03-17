@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9rzGDbTykkO8mTBPfXPruA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.com.br/Jogo-Bingo-Profissional-Cromado-Pedras/dp/B0DCQ6D161/ref=sr_1_1_sspa" DesignTimeRectangle="895, 482, 632, 77" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='productTitle' tag='SPAN' type='' class='a-size-large product-title-word-break' /&gt;" Guid="236259f3-e481-4aa9-8e05-0b3856715109" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jogo De Bingo Profissional Cromado Nº 1 Com 75 Pedras - 300 Cartelas | Amazon.com.br' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="45f9b309119ecfd7e64b5820b09893ad.png" xmlns="">0JeS2u8kxUUa_TU2HYJnfCw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
